@@ -1038,6 +1038,25 @@ header{
   font-weight:800;
   font-size:12px;
 }
+
+.field input,
+.field textarea,
+.field select{
+  width:100%;
+  border:1px solid var(--border);
+  background:#fff;
+  color:var(--text);
+  border-radius:13px;
+  padding:11px 13px;
+  outline:none;
+}
+
+.field input:focus,
+.field textarea:focus,
+.field select:focus{
+  border-color:var(--green);
+  box-shadow:0 0 0 4px rgba(21,148,71,.08);
+}
 .field textarea{
   min-height:140px;
   resize:vertical;
@@ -4201,23 +4220,3 @@ window.addEventListener(
 
 </body>
 </html>
-
-
-.field input,
-.field textarea,
-.field select{
-  width:100%;
-  border:1px solid var(--border);
-  background:#fff;
-  color:var(--text);
-  border-radius:13px;
-  padding:11px 13px;
-  outline:none;
-}
-
-.field input:focus,
-.field textarea:focus,
-.field select:focus{
-  border-color:var(--green);
-  box-shadow:0 0 0 4px rgba(21,148,71,.08);
-}
