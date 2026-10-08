@@ -128,7 +128,9 @@
   padding:0;
 }
 
-html{scroll-behavior:smooth;}
+html{
+  scroll-behavior:smooth;
+}
 
 body{
   font-family:Tahoma,Arial,"Segoe UI",sans-serif;
@@ -167,8 +169,7 @@ body.dark .event-card,
 body.dark .achievement-card,
 body.dark .quick-card,
 body.dark .comment-card,
-body.dark .digital-box,
-body.dark .ai-box{
+body.dark .digital-box{
   background:#101a14;
   color:var(--text);
 }
@@ -189,11 +190,16 @@ a{
   text-decoration:none;
 }
 
-button,input,textarea,select{
+button,
+input,
+textarea,
+select{
   font:inherit;
 }
 
-button{cursor:pointer;}
+button{
+  cursor:pointer;
+}
 
 img{
   max-width:100%;
@@ -244,7 +250,12 @@ section{
   color:#fff;
   font-size:12px;
   padding:7px 0;
-  background:linear-gradient(90deg,var(--red) 0 33%,var(--white) 33% 66%,var(--green) 66% 100%);
+  background:linear-gradient(
+    90deg,
+    var(--red) 0 33%,
+    var(--white) 33% 66%,
+    var(--green) 66% 100%
+  );
   position:relative;
 }
 
@@ -301,7 +312,9 @@ header{
   box-shadow:0 9px 20px rgba(21,148,71,.22);
 }
 
-.logo-text{line-height:1.2;}
+.logo-text{
+  line-height:1.2;
+}
 
 .logo-text strong{
   display:block;
@@ -354,7 +367,9 @@ header{
   place-items:center;
 }
 
-.menu-btn{display:none;}
+.menu-btn{
+  display:none;
+}
 
 .hero{
   position:relative;
@@ -394,7 +409,9 @@ header{
   margin-bottom:18px;
 }
 
-.hero-copy h1 span{color:var(--green);}
+.hero-copy h1 span{
+  color:var(--green);
+}
 
 .hero-copy p{
   color:var(--muted);
@@ -421,7 +438,9 @@ header{
   transition:.2s;
 }
 
-.btn:hover{transform:translateY(-2px);}
+.btn:hover{
+  transform:translateY(-2px);
+}
 
 .btn-primary{
   color:#fff;
@@ -446,7 +465,9 @@ header{
   font-size:12px;
 }
 
-.hero-image{position:relative;}
+.hero-image{
+  position:relative;
+}
 
 .hero-image img{
   width:100%;
@@ -504,8 +525,7 @@ header{
 }
 
 .section-box,
-.digital-box,
-.ai-box{
+.digital-box{
   background:var(--white);
   border:1px solid var(--border);
   border-radius:var(--radius);
@@ -513,7 +533,9 @@ header{
   padding:28px;
 }
 
-.album-grid{grid-template-columns:repeat(2,1fr);}
+.album-grid{
+  grid-template-columns:repeat(2,1fr);
+}
 
 .album-card,
 .book-card,
@@ -551,9 +573,13 @@ header{
   transition:.4s;
 }
 
-.album-card:hover .album-cover img{transform:scale(1.04);}
+.album-card:hover .album-cover img{
+  transform:scale(1.04);
+}
 
-.album-body{padding:20px;}
+.album-body{
+  padding:20px;
+}
 
 .album-body h3{
   font-size:21px;
@@ -572,7 +598,9 @@ header{
   gap:8px;
 }
 
-.works-grid{grid-template-columns:repeat(3,1fr);}
+.works-grid{
+  grid-template-columns:repeat(3,1fr);
+}
 
 .work-card{
   border-radius:22px;
@@ -689,9 +717,13 @@ header{
   color:#fff;
 }
 
-.special-track .track-info small{color:rgba(255,255,255,.8);}
+.special-track .track-info small{
+  color:rgba(255,255,255,.8);
+}
 
-.book-grid{grid-template-columns:repeat(3,1fr);}
+.book-grid{
+  grid-template-columns:repeat(3,1fr);
+}
 
 .book-card{
   overflow:hidden;
@@ -710,7 +742,9 @@ header{
   object-fit:cover;
 }
 
-.book-body{padding:17px;}
+.book-body{
+  padding:17px;
+}
 
 .book-body h3{
   font-size:16px;
@@ -756,7 +790,9 @@ header{
   font-size:14px;
 }
 
-.contact-grid{grid-template-columns:repeat(4,1fr);}
+.contact-grid{
+  grid-template-columns:repeat(4,1fr);
+}
 
 .contact-card{
   border-radius:20px;
@@ -787,7 +823,9 @@ header{
   word-break:break-word;
 }
 
-.news-grid{grid-template-columns:repeat(3,1fr);}
+.news-grid{
+  grid-template-columns:repeat(3,1fr);
+}
 
 .news-card{
   border-radius:20px;
@@ -831,9 +869,13 @@ header{
   transition:.35s;
 }
 
-.gallery-item:hover img{transform:scale(1.06);}
+.gallery-item:hover img{
+  transform:scale(1.06);
+}
 
-.game-grid{grid-template-columns:repeat(4,1fr);}
+.game-grid{
+  grid-template-columns:repeat(4,1fr);
+}
 
 .game-card{
   border-radius:22px;
@@ -854,7 +896,9 @@ header{
     linear-gradient(135deg,var(--green-dark),var(--green));
 }
 
-.game-body{padding:17px;}
+.game-body{
+  padding:17px;
+}
 
 .game-body h3{
   font-size:15px;
@@ -887,10 +931,18 @@ header{
   border:1px solid var(--border);
 }
 
-.store-toolbar strong{font-size:16px;}
-.store-toolbar span{color:var(--muted);font-size:12px;}
+.store-toolbar strong{
+  font-size:16px;
+}
 
-.store-grid{grid-template-columns:repeat(4,1fr);}
+.store-toolbar span{
+  color:var(--muted);
+  font-size:12px;
+}
+
+.store-grid{
+  grid-template-columns:repeat(4,1fr);
+}
 
 .store-card{
   border-radius:20px;
@@ -936,9 +988,13 @@ header{
   margin-bottom:12px;
 }
 
-.store-card .price{margin-top:auto;}
+.store-card .price{
+  margin-top:auto;
+}
 
-.ad-grid{grid-template-columns:repeat(4,1fr);}
+.ad-grid{
+  grid-template-columns:repeat(4,1fr);
+}
 
 .ad-card{
   background:linear-gradient(145deg,#fff,#f1fbf4);
@@ -952,7 +1008,9 @@ header{
   margin-bottom:9px;
 }
 
-.ad-card h3{margin-bottom:6px;}
+.ad-card h3{
+  margin-bottom:6px;
+}
 
 .ad-card p{
   color:var(--muted);
@@ -972,32 +1030,14 @@ header{
   gap:6px;
 }
 
-.field.full{grid-column:1/-1;}
+.field.full{
+  grid-column:1/-1;
+}
 
 .field label{
   font-weight:800;
   font-size:12px;
 }
-
-.field input,
-.field textarea,
-.field select{
-  width:100%;
-  border:1px solid var(--border);
-  background:#fff;
-  color:var(--text);
-  border-radius:13px;
-  padding:11px 13px;
-  outline:none;
-}
-
-.field input:focus,
-.field textarea:focus,
-.field select:focus{
-  border-color:var(--green);
-  box-shadow:0 0 0 4px rgba(21,148,71,.08);
-}
-
 .field textarea{
   min-height:140px;
   resize:vertical;
@@ -1047,8 +1087,14 @@ header{
   font-weight:950;
 }
 
-.timeline-item h3{margin:3px 0 6px;}
-.timeline-item p{color:var(--muted);font-size:13px;}
+.timeline-item h3{
+  margin:3px 0 6px;
+}
+
+.timeline-item p{
+  color:var(--muted);
+  font-size:13px;
+}
 
 .new-grid{
   display:grid;
@@ -1100,7 +1146,9 @@ header{
   font-size:18px;
 }
 
-.archive-item small{color:var(--muted);}
+.archive-item small{
+  color:var(--muted);
+}
 
 .faq-list{
   display:grid;
@@ -1113,6 +1161,7 @@ header{
   border-radius:16px;
   overflow:hidden;
   border:1px solid var(--border);
+  background:var(--white);
 }
 
 .faq-item summary{
@@ -1186,8 +1235,14 @@ header{
   margin-bottom:5px;
 }
 
-.achievement-card h3{font-size:14px;}
-.achievement-card p{color:var(--muted);font-size:11px;}
+.achievement-card h3{
+  font-size:14px;
+}
+
+.achievement-card p{
+  color:var(--muted);
+  font-size:11px;
+}
 
 .quick-card{
   border-radius:17px;
@@ -1389,91 +1444,6 @@ header{
   font-size:13px;
 }
 
-.ai-box{
-  display:grid;
-  grid-template-columns:280px 1fr;
-  gap:22px;
-  align-items:stretch;
-}
-
-.ai-intro{
-  border-radius:22px;
-  padding:24px;
-  background:
-    radial-gradient(circle at 30% 20%,rgba(255,255,255,.15),transparent 25%),
-    linear-gradient(135deg,var(--red-dark),var(--red));
-  color:#fff;
-}
-
-.ai-intro .ai-icon{
-  font-size:48px;
-  margin-bottom:10px;
-}
-
-.ai-intro p{
-  opacity:.88;
-  font-size:12px;
-}
-
-.ai-chat{
-  border:1px solid var(--border);
-  border-radius:20px;
-  padding:16px;
-  background:var(--green-soft);
-  min-height:320px;
-  display:flex;
-  flex-direction:column;
-}
-
-.ai-messages{
-  flex:1;
-  overflow:auto;
-  display:grid;
-  gap:8px;
-  margin-bottom:10px;
-  max-height:340px;
-}
-
-.ai-message{
-  padding:11px 13px;
-  border-radius:14px;
-  max-width:88%;
-  font-size:12px;
-}
-
-.ai-message.bot{
-  background:#fff;
-  border:1px solid var(--border);
-  justify-self:start;
-}
-
-.ai-message.user{
-  background:var(--green);
-  color:#fff;
-  justify-self:end;
-}
-
-.ai-form{
-  display:flex;
-  gap:8px;
-}
-
-.ai-form input{
-  flex:1;
-  border:1px solid var(--border);
-  border-radius:13px;
-  padding:11px 13px;
-  background:var(--white);
-  color:var(--text);
-  outline:none;
-}
-
-.ai-note{
-  font-size:10px;
-  color:var(--muted);
-  margin-top:8px;
-}
-
 .cart-float{
   position:fixed;
   right:18px;
@@ -1520,7 +1490,9 @@ header{
   flex-direction:column;
 }
 
-.cart-panel.open{transform:translateX(0);}
+.cart-panel.open{
+  transform:translateX(0);
+}
 
 .cart-head{
   padding:18px;
@@ -1549,8 +1521,14 @@ header{
   gap:10px;
 }
 
-.cart-item h4{font-size:13px;}
-.cart-item small{color:var(--muted);font-size:10px;}
+.cart-item h4{
+  font-size:13px;
+}
+
+.cart-item small{
+  color:var(--muted);
+  font-size:10px;
+}
 
 .cart-code{
   display:inline-block;
@@ -1649,25 +1627,10 @@ body.dark .bg-music-player{
   color:#fff;
 }
 
-.ai-float{
-  position:fixed;
-  left:18px;
-  bottom:80px;
-  z-index:1060;
-  width:52px;
-  height:52px;
-  border:0;
-  border-radius:50%;
-  background:linear-gradient(135deg,var(--green),var(--green-dark));
-  color:#fff;
-  font-size:23px;
-  box-shadow:0 12px 30px rgba(21,148,71,.3);
-}
-
 .back-top{
   position:fixed;
   left:18px;
-  bottom:140px;
+  bottom:80px;
   width:43px;
   height:43px;
   border:0;
@@ -1722,7 +1685,9 @@ footer{
   gap:30px;
 }
 
-footer h3{margin-bottom:11px;}
+footer h3{
+  margin-bottom:11px;
+}
 
 footer p,
 footer a{
@@ -1763,17 +1728,33 @@ footer a{
     overflow:auto;
   }
 
-  .nav-links.open{display:flex;}
+  .nav-links.open{
+    display:flex;
+  }
 
-  .menu-btn{display:grid;}
+  .menu-btn{
+    display:grid;
+  }
 
-  .hero-grid{grid-template-columns:1fr;}
+  .hero-grid{
+    grid-template-columns:1fr;
+  }
 
-  .hero-copy{text-align:center;}
-  .hero-copy p{margin-inline:auto;}
-  .hero-buttons{justify-content:center;}
+  .hero-copy{
+    text-align:center;
+  }
 
-  .stats-grid{grid-template-columns:repeat(2,1fr);}
+  .hero-copy p{
+    margin-inline:auto;
+  }
+
+  .hero-buttons{
+    justify-content:center;
+  }
+
+  .stats-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
 
   .contact-grid,
   .game-grid,
@@ -1783,9 +1764,13 @@ footer a{
     grid-template-columns:repeat(2,1fr);
   }
 
-  .gallery-grid{grid-template-columns:repeat(4,1fr);}
+  .gallery-grid{
+    grid-template-columns:repeat(4,1fr);
+  }
 
-  .ad-grid{grid-template-columns:repeat(2,1fr);}
+  .ad-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
 
   .new-grid,
   .event-grid,
@@ -1793,44 +1778,66 @@ footer a{
     grid-template-columns:repeat(2,1fr);
   }
 
-  .digital-box,
-  .ai-box{
+  .digital-box{
     grid-template-columns:1fr;
   }
 
-  .sitemap-grid{columns:2;}
+  .sitemap-grid{
+    columns:2;
+  }
 }
 
 @media(max-width:760px){
 
-  section{padding:60px 0;}
+  section{
+    padding:60px 0;
+  }
 
-  .container{width:min(var(--container),calc(100% - 22px));}
+  .container{
+    width:min(var(--container),calc(100% - 22px));
+  }
 
   .topbar-inner{
     justify-content:center;
     text-align:center;
   }
 
-  .topbar-inner span:last-child{display:none;}
+  .topbar-inner span:last-child{
+    display:none;
+  }
 
-  .navbar{min-height:65px;}
-  .nav-links{top:65px;}
+  .navbar{
+    min-height:65px;
+  }
+
+  .nav-links{
+    top:65px;
+  }
 
   .logo-mark{
     width:40px;
     height:40px;
   }
 
-  .logo-text strong{font-size:14px;}
-  .logo-text span{display:none;}
+  .logo-text strong{
+    font-size:14px;
+  }
+
+  .logo-text span{
+    display:none;
+  }
 
   .hero{
     padding:65px 0 90px;
   }
 
-  .hero-copy h1{font-size:42px;}
-  .hero-copy p{font-size:14px;}
+  .hero-copy h1{
+    font-size:42px;
+  }
+
+  .hero-copy p{
+    font-size:14px;
+  }
 
   .album-grid,
   .works-grid,
@@ -1856,41 +1863,49 @@ footer a{
     height:64px;
   }
 
-  .gallery-grid{grid-template-columns:repeat(3,1fr);}
+  .gallery-grid{
+    grid-template-columns:repeat(3,1fr);
+  }
 
   .calendar-day{
     min-height:60px;
     padding:5px;
   }
 
-  .calendar-day strong{font-size:14px;}
-  .calendar-day small{display:none;}
+  .calendar-day strong{
+    font-size:14px;
+  }
+
+  .calendar-day small{
+    display:none;
+  }
 
   .bg-music-player{
     left:8px;
     bottom:8px;
   }
 
-  .bg-music-label{display:none;}
+  .bg-music-label{
+    display:none;
+  }
 
   .cart-float{
     right:10px;
     bottom:10px;
   }
 
-  .ai-float{
+  .back-top{
     left:10px;
     bottom:62px;
   }
 
-  .back-top{
-    left:10px;
-    bottom:118px;
+  footer{
+    padding-bottom:90px;
   }
 
-  footer{padding-bottom:90px;}
-
-  .footer-grid{grid-template-columns:1fr;}
+  .footer-grid{
+    grid-template-columns:1fr;
+  }
 
   .achievement-grid,
   .quick-grid{
@@ -1905,8 +1920,13 @@ footer a{
     gap:8px;
   }
 
-  .stat{padding:14px 7px;}
-  .stat strong{font-size:23px;}
+  .stat{
+    padding:14px 7px;
+  }
+
+  .stat strong{
+    font-size:23px;
+  }
 
   .contact-grid,
   .game-grid,
@@ -1915,20 +1935,24 @@ footer a{
     grid-template-columns:1fr;
   }
 
-  .gallery-grid{grid-template-columns:repeat(2,1fr);}
+  .gallery-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
 
   .section-box,
   .store-shell,
   .calendar-wrap,
-  .digital-box,
-  .ai-box{
+  .digital-box{
     padding:17px;
   }
 
-  .ai-form{flex-direction:column;}
-  .search-box{flex-direction:column;}
+  .search-box{
+    flex-direction:column;
+  }
 
-  .sitemap-grid{columns:1;}
+  .sitemap-grid{
+    columns:1;
+  }
 }
 </style>
 </head>
@@ -1966,7 +1990,6 @@ footer a{
         <li><a href="#store">فروشگاه</a></li>
         <li><a href="#digital-center">ساعت</a></li>
         <li><a href="#calendar">تقویم</a></li>
-        <li><a href="#ai-assistant">هوش مصنوعی</a></li>
         <li><a href="#news">اخبار</a></li>
         <li><a href="#gallery">گالری</a></li>
         <li><a href="#advertising">تبلیغات</a></li>
@@ -1988,6 +2011,7 @@ footer a{
   <div class="container hero-grid">
 
     <div class="hero-copy">
+
       <div class="badge">✨ وب‌سایت رسمی هنرمند</div>
 
       <h1>محمدرضا <span>کریمی</span></h1>
@@ -2002,8 +2026,8 @@ footer a{
         <a class="btn btn-primary" href="#music">🎧 شنیدن موسیقی</a>
         <a class="btn btn-secondary" href="#store">🛒 ورود به فروشگاه</a>
         <a class="btn btn-secondary" href="#books">📚 کتاب‌ها</a>
-        <a class="btn btn-danger" href="#ai-assistant">🤖 هوش مصنوعی</a>
       </div>
+
     </div>
 
     <div class="hero-image">
@@ -2016,27 +2040,33 @@ footer a{
 
 <section class="stats" aria-label="آمار سایت">
   <div class="container stats-grid">
+
     <div class="stat">
       <strong>11</strong>
       <span>قطعه موسیقی</span>
     </div>
+
     <div class="stat">
       <strong>6</strong>
       <span>کتاب</span>
     </div>
+
     <div class="stat">
       <strong>8</strong>
       <span>بازی و برنامه</span>
     </div>
+
     <div class="stat">
       <strong>17</strong>
       <span>محصول فروشگاه</span>
     </div>
+
   </div>
 </section>
 
 <section id="artist-profile">
   <div class="container">
+
     <div class="section-head">
       <div class="eyebrow">ARTIST PROFILE</div>
       <h2>معرفی هنرمند</h2>
@@ -2044,98 +2074,170 @@ footer a{
     </div>
 
     <div class="new-grid">
+
       <article class="new-card">
         <div class="new-icon">🎤</div>
         <h3>خوانندگی و موسیقی</h3>
-        <p>مجموعه‌ای از قطعات موسیقی و آلبوم‌های محمدرضا کریمی در بخش موسیقی سایت قرار دارد.</p>
+        <p>
+          مجموعه‌ای از قطعات موسیقی و آلبوم‌های محمدرضا کریمی
+          در بخش موسیقی سایت قرار دارد.
+        </p>
       </article>
 
       <article class="new-card">
         <div class="new-icon">✍️</div>
         <h3>نویسندگی</h3>
-        <p>مجموعه‌ای از آثار مکتوب و کتاب‌های معرفی‌شده در وب‌سایت در دسترس هستند.</p>
+        <p>
+          مجموعه‌ای از آثار مکتوب و کتاب‌های معرفی‌شده
+          در وب‌سایت در دسترس هستند.
+        </p>
       </article>
 
       <article class="new-card">
         <div class="new-icon">💻</div>
         <h3>آثار دیجیتال</h3>
-        <p>بازی‌ها و برنامه‌های دیجیتال نیز در مجموعه فعالیت‌های این وب‌سایت قرار گرفته‌اند.</p>
+        <p>
+          بازی‌ها و برنامه‌های دیجیتال نیز در مجموعه فعالیت‌های
+          این وب‌سایت قرار گرفته‌اند.
+        </p>
       </article>
+
     </div>
   </div>
 </section>
 
 <section id="biography">
   <div class="container">
+
     <div class="section-head">
       <div class="eyebrow">BIOGRAPHY</div>
       <h2>زندگینامه و مسیر هنری</h2>
-      <p>نمایی از مسیر فعالیت‌های هنری، موسیقی، نویسندگی و آثار دیجیتال.</p>
+      <p>
+        نمایی از مسیر فعالیت‌های هنری، موسیقی، نویسندگی و آثار دیجیتال.
+      </p>
     </div>
 
     <div class="timeline">
+
       <article class="timeline-item">
         <div class="timeline-year">فعالیت هنری</div>
         <h3>شروع و توسعه فعالیت‌های هنری</h3>
-        <p>فعالیت در زمینه موسیقی، نویسندگی و تولید آثار مختلف و توسعه تدریجی مجموعه آثار شخصی.</p>
+        <p>
+          فعالیت در زمینه موسیقی، نویسندگی و تولید آثار مختلف
+          و توسعه تدریجی مجموعه آثار شخصی.
+        </p>
       </article>
 
       <article class="timeline-item">
         <div class="timeline-year">موسیقی</div>
         <h3>تولید و انتشار قطعات موسیقی</h3>
-        <p>مجموعه قطعات شامل یاقوت، نگین، نام بارون، شب‌های مستی، شمیم، چوب دار، یگانه، اعتماد، با تفاوت و دیوار.</p>
+        <p>
+          مجموعه قطعات شامل یاقوت، نگین، نام بارون، شب‌های مستی،
+          شمیم، چوب دار، یگانه، اعتماد، با تفاوت و دیوار.
+        </p>
       </article>
 
       <article class="timeline-item">
         <div class="timeline-year">نویسندگی</div>
         <h3>توسعه مجموعه کتاب‌ها</h3>
-        <p>معرفی و عرضه مجموعه‌ای از آثار مکتوب در بخش کتاب‌ها و فروشگاه.</p>
+        <p>
+          معرفی و عرضه مجموعه‌ای از آثار مکتوب در بخش کتاب‌ها و فروشگاه.
+        </p>
       </article>
 
       <article class="timeline-item">
         <div class="timeline-year">۱۴۰۵ / ۲۰۲۶</div>
         <h3>گسترش وب‌سایت رسمی</h3>
-        <p>ایجاد یک مرجع یکپارچه برای موسیقی، کتاب، ویدئو، اخبار، بازی‌ها، فروشگاه و ارتباط مستقیم.</p>
+        <p>
+          ایجاد یک مرجع یکپارچه برای موسیقی، کتاب، ویدئو، اخبار،
+          بازی‌ها، فروشگاه و ارتباط مستقیم.
+        </p>
       </article>
+
     </div>
   </div>
 </section>
 
 <section id="albums">
   <div class="container">
+
     <div class="section-head">
       <div class="eyebrow">MUSIC ALBUMS</div>
       <h2>آلبوم‌ها</h2>
-      <p>آلبوم‌های منتشرشده و آثار موسیقایی محمدرضا کریمی.</p>
+      <p>
+        آلبوم‌های منتشرشده و آثار موسیقایی محمدرضا کریمی.
+      </p>
     </div>
 
     <div class="grid album-grid">
 
       <article class="album-card">
+
         <div class="album-cover">
           <img src="black-lucifer-1.jpg" alt="آلبوم لوسیفر سیاه">
         </div>
+
         <div class="album-body">
+
           <h3>لوسیفر سیاه</h3>
-          <p>آلبوم موسیقی محمدرضا کریمی</p>
+
+          <p>
+            آلبوم موسیقی محمدرضا کریمی
+          </p>
+
           <div class="card-actions">
-            <a class="btn btn-primary btn-small" href="https://mytehranmusic.com/mohammadreza-karimi-black-lucifer/" target="_blank" rel="noopener">مشاهده آلبوم</a>
-            <button class="btn btn-secondary btn-small" onclick="addToCart('album-black-lucifer-1')">🛒 افزودن</button>
+
+            <a
+              class="btn btn-primary btn-small"
+              href="https://mytehranmusic.com/mohammadreza-karimi-black-lucifer/"
+              target="_blank"
+              rel="noopener">
+              مشاهده آلبوم
+            </a>
+
+            <button
+              class="btn btn-secondary btn-small"
+              onclick="addToCart('album-black-lucifer-1')">
+              🛒 افزودن
+            </button>
+
           </div>
+
         </div>
       </article>
 
       <article class="album-card">
+
         <div class="album-cover">
           <img src="black-lucifer-2.jpg" alt="لوسیفر سیاه ۲">
         </div>
+
         <div class="album-body">
+
           <h3>لوسیفر سیاه ۲</h3>
-          <p>نسخه دوم آلبوم</p>
+
+          <p>
+            نسخه دوم آلبوم
+          </p>
+
           <div class="card-actions">
-            <a class="btn btn-primary btn-small" href="https://mytehranmusic.com/mohammadreza-karimi-lucifer-black2-album/" target="_blank" rel="noopener">مشاهده آلبوم</a>
-            <button class="btn btn-secondary btn-small" onclick="addToCart('album-black-lucifer-2')">🛒 افزودن</button>
+
+            <a
+              class="btn btn-primary btn-small"
+              href="https://mytehranmusic.com/mohammadreza-karimi-lucifer-black2-album/"
+              target="_blank"
+              rel="noopener">
+              مشاهده آلبوم
+            </a>
+
+            <button
+              class="btn btn-secondary btn-small"
+              onclick="addToCart('album-black-lucifer-2')">
+              🛒 افزودن
+            </button>
+
           </div>
+
         </div>
       </article>
 
@@ -2144,173 +2246,534 @@ footer a{
 </section>
 
 <section id="selected-works">
+
   <div class="container">
+
     <div class="section-head">
       <div class="eyebrow">SELECTED WORKS</div>
       <h2>آثار منتخب</h2>
-      <p>بخشی از آثار مهم موجود در مجموعه سایت.</p>
+      <p>
+        مجموعه‌ای از مهم‌ترین بخش‌های وب‌سایت و آثار محمدرضا کریمی.
+      </p>
     </div>
 
-    <div class="new-grid">
-      <article class="new-card">
-        <div class="new-icon">🎵</div>
-        <h3>My Dear Father</h3>
-        <p>قطعه ویژه موجود در سایت با سال ۱۴۰۵ / ۲۰۲۶.</p>
-        <br>
-        <a class="btn btn-primary btn-small" href="#track11">مشاهده اثر</a>
-      </article>
+    <div class="works-grid grid">
 
-      <article class="new-card">
-        <div class="new-icon">📖</div>
-        <h3>ساعت سیزدهم</h3>
-        <p>یکی از کتاب‌های موجود در مجموعه آثار مکتوب.</p>
-        <br>
-        <a class="btn btn-primary btn-small" href="#books">مشاهده کتاب</a>
-      </article>
-
-      <article class="new-card">
-        <div class="new-icon">🎮</div>
-        <h3>مجموعه بازی‌ها و برنامه‌ها</h3>
-        <p>هشت عنوان دیجیتال در بخش بازی‌ها و برنامه‌ها قرار دارند.</p>
-        <br>
-        <a class="btn btn-primary btn-small" href="#games">مشاهده مجموعه</a>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section id="works">
-  <div class="container">
-    <div class="section-head">
-      <div class="eyebrow">MY WORKS</div>
-      <h2>زمینه‌های فعالیت</h2>
-      <p>مجموعه‌ای از فعالیت‌ها و آثار هنری و دیجیتال.</p>
-    </div>
-
-    <div class="grid works-grid">
-      <div class="work-card">
+      <article class="work-card">
         <div class="work-icon">🎵</div>
         <h3>موسیقی</h3>
-        <p>قطعات، آلبوم‌ها و آثار صوتی محمدرضا کریمی.</p>
-      </div>
+        <p>
+          شنیدن و دریافت قطعات موسیقی و مشاهده اطلاعات هر اثر.
+        </p>
+        <br>
+        <a class="btn btn-primary btn-small" href="#music">
+          مشاهده موسیقی
+        </a>
+      </article>
 
-      <div class="work-card">
+      <article class="work-card">
         <div class="work-icon">📚</div>
-        <h3>نویسندگی</h3>
-        <p>کتاب‌ها و آثار ادبی منتشرشده و در دسترس.</p>
-      </div>
+        <h3>کتاب‌ها</h3>
+        <p>
+          معرفی کتاب‌ها و دسترسی به نسخه‌های دیجیتال موجود.
+        </p>
+        <br>
+        <a class="btn btn-primary btn-small" href="#books">
+          مشاهده کتاب‌ها
+        </a>
+      </article>
 
-      <div class="work-card">
-        <div class="work-icon">🎮</div>
-        <h3>بازی و برنامه</h3>
-        <p>بازی‌ها و برنامه‌های مختلف برای دانلود و خرید.</p>
-      </div>
+      <article class="work-card">
+        <div class="work-icon">🛒</div>
+        <h3>فروشگاه مستقل</h3>
+        <p>
+          فروشگاه منظم با کد اختصاصی برای هر محصول و ثبت سفارش.
+        </p>
+        <br>
+        <a class="btn btn-primary btn-small" href="#store">
+          ورود به فروشگاه
+        </a>
+      </article>
+
     </div>
   </div>
 </section>
 
 <section id="music">
+
   <div class="container">
 
     <div class="section-head">
       <div class="eyebrow">MUSIC</div>
-      <h2>موسیقی‌ها</h2>
-      <p>کاور آهنگ‌ها نیز نمایش داده شده و کیفیت صوتی قابل انتخاب است.</p>
+      <h2>موسیقی‌های محمدرضا کریمی</h2>
+      <p>
+        کاور، پخش آنلاین و انتخاب کیفیت برای قطعات موسیقی.
+      </p>
     </div>
 
-    <div id="musicList" class="music-list"></div>
+    <div class="music-list">
 
-    <article id="track11" class="music-card special-track">
+      <article class="music-card">
+
+        <div class="track-number">1</div>
+
+        <div class="music-cover">
+          <img src="black-lucifer-1.jpg" alt="کاور آهنگ یاقوت">
+        </div>
+
+        <div class="track-info">
+          <h3>یاقوت</h3>
+          <small>قطعه موسیقی • محمدرضا کریمی</small>
+
+          <select class="quality-select"
+            onchange="changeAudioQuality(this,'yaghut.mp3','yaghut-48k.mp3','yaghut-32k.mp3')">
+            <option value="original">کیفیت اصلی</option>
+            <option value="medium">کیفیت متوسط</option>
+            <option value="low">حجم کم</option>
+          </select>
+        </div>
+
+        <audio
+          class="track-audio"
+          controls
+          preload="metadata"
+          src="yaghut.mp3">
+        </audio>
+
+      </article>
+
+      <article class="music-card">
+
+        <div class="track-number">2</div>
+
+        <div class="music-cover">
+          <img src="black-lucifer-1.jpg" alt="کاور آهنگ نگین">
+        </div>
+
+        <div class="track-info">
+          <h3>نگین</h3>
+          <small>قطعه موسیقی • محمدرضا کریمی</small>
+
+          <select class="quality-select"
+            onchange="changeAudioQuality(this,'negin.mp3','negin-48k.mp3','negin-32k.mp3')">
+            <option value="original">کیفیت اصلی</option>
+            <option value="medium">کیفیت متوسط</option>
+            <option value="low">حجم کم</option>
+          </select>
+        </div>
+
+        <audio
+          class="track-audio"
+          controls
+          preload="metadata"
+          src="negin.mp3">
+        </audio>
+
+      </article>
+
+      <article class="music-card">
+
+        <div class="track-number">3</div>
+
+        <div class="music-cover">
+          <img src="black-lucifer-1.jpg" alt="کاور آهنگ نام بارون">
+        </div>
+
+        <div class="track-info">
+          <h3>نام بارون</h3>
+          <small>قطعه موسیقی • محمدرضا کریمی</small>
+
+          <select class="quality-select"
+            onchange="changeAudioQuality(this,'name-baroon.mp3','name-baroon-48k.mp3','name-baroon-32k.mp3')">
+            <option value="original">کیفیت اصلی</option>
+            <option value="medium">کیفیت متوسط</option>
+            <option value="low">حجم کم</option>
+          </select>
+        </div>
+
+        <audio
+          class="track-audio"
+          controls
+          preload="metadata"
+          src="name-baroon.mp3">
+        </audio>
+
+      </article>
+
+      <article class="music-card">
+
+        <div class="track-number">4</div>
+
+        <div class="music-cover">
+          <img src="black-lucifer-1.jpg" alt="کاور آهنگ شب‌های مستی">
+        </div>
+
+        <div class="track-info">
+          <h3>شب‌های مستی</h3>
+          <small>قطعه موسیقی • محمدرضا کریمی</small>
+
+          <select class="quality-select"
+            onchange="changeAudioQuality(this,'shabhaye-masti.mp3','shabhaye-masti-48k.mp3','shabhaye-masti-32k.mp3')">
+            <option value="original">کیفیت اصلی</option>
+            <option value="medium">کیفیت متوسط</option>
+            <option value="low">حجم کم</option>
+          </select>
+        </div>
+
+        <audio
+          class="track-audio"
+          controls
+          preload="metadata"
+          src="shabhaye-masti.mp3">
+        </audio>
+
+      </article>
+
+      <article class="music-card">
+
+        <div class="track-number">5</div>
+
+        <div class="music-cover">
+          <img src="black-lucifer-1.jpg" alt="کاور آهنگ شمیم">
+        </div>
+
+        <div class="track-info">
+          <h3>شمیم</h3>
+          <small>قطعه موسیقی • محمدرضا کریمی</small>
+
+          <select class="quality-select"
+            onchange="changeAudioQuality(this,'shamim.mp3','shamim-48k.mp3','shamim-32k.mp3')">
+            <option value="original">کیفیت اصلی</option>
+            <option value="medium">کیفیت متوسط</option>
+            <option value="low">حجم کم</option>
+          </select>
+        </div>
+
+        <audio
+          class="track-audio"
+          controls
+          preload="metadata"
+          src="shamim.mp3">
+        </audio>
+
+      </article>
+
+      <article class="music-card">
+
+        <div class="track-number">6</div>
+
+        <div class="music-cover">
+          <img src="black-lucifer-2.jpg" alt="کاور آهنگ چوب دار">
+        </div>
+
+        <div class="track-info">
+          <h3>چوب دار</h3>
+          <small>قطعه موسیقی • محمدرضا کریمی</small>
+
+          <select class="quality-select"
+            onchange="changeAudioQuality(this,'choubeye-daar.mp3','choubeye-daar-48k.mp3','choubeye-daar-32k.mp3')">
+            <option value="original">کیفیت اصلی</option>
+            <option value="medium">کیفیت متوسط</option>
+            <option value="low">حجم کم</option>
+          </select>
+        </div>
+
+        <audio
+          class="track-audio"
+          controls
+          preload="metadata"
+          src="choubeye-daar.mp3">
+        </audio>
+
+      </article>
+
+      <article class="music-card">
+
+        <div class="track-number">7</div>
+
+        <div class="music-cover">
+          <img src="black-lucifer-2.jpg" alt="کاور آهنگ یگانه">
+        </div>
+
+        <div class="track-info">
+          <h3>یگانه</h3>
+          <small>قطعه موسیقی • محمدرضا کریمی</small>
+
+          <select class="quality-select"
+            onchange="changeAudioQuality(this,'yegane.mp3','yegane-48k.mp3','yegane-32k.mp3')">
+            <option value="original">کیفیت اصلی</option>
+            <option value="medium">کیفیت متوسط</option>
+            <option value="low">حجم کم</option>
+          </select>
+        </div>
+
+        <audio
+          class="track-audio"
+          controls
+          preload="metadata"
+          src="yegane.mp3">
+        </audio>
+
+      </article>
+
+      <article class="music-card">
+
+        <div class="track-number">8</div>
+
+        <div class="music-cover">
+          <img src="black-lucifer-2.jpg" alt="کاور آهنگ اعتماد">
+        </div>
+
+        <div class="track-info">
+          <h3>اعتماد</h3>
+          <small>قطعه موسیقی • محمدرضا کریمی</small>
+
+          <select class="quality-select"
+            onchange="changeAudioQuality(this,'atmad.mp3','atmad-48k.mp3','atmad-32k.mp3')">
+            <option value="original">کیفیت اصلی</option>
+            <option value="medium">کیفیت متوسط</option>
+            <option value="low">حجم کم</option>
+          </select>
+        </div>
+
+        <audio
+          class="track-audio"
+          controls
+          preload="metadata"
+          src="atmad.mp3">
+        </audio>
+
+      </article>
+
+      <article class="music-card">
+
+        <div class="track-number">9</div>
+
+        <div class="music-cover">
+          <img src="black-lucifer-2.jpg" alt="کاور آهنگ با تفاوت">
+        </div>
+
+        <div class="track-info">
+          <h3>با تفاوت</h3>
+          <small>قطعه موسیقی • محمدرضا کریمی</small>
+
+          <select class="quality-select"
+            onchange="changeAudioQuality(this,'btafavot.mp3','btafavot-48k.mp3','btafavot-32k.mp3')">
+            <option value="original">کیفیت اصلی</option>
+            <option value="medium">کیفیت متوسط</option>
+            <option value="low">حجم کم</option>
+          </select>
+        </div>
+
+        <audio
+          class="track-audio"
+          controls
+          preload="metadata"
+          src="btafavot.mp3">
+        </audio>
+
+      </article>
+
+      <article class="music-card">
+
+        <div class="track-number">10</div>
+
+        <div class="music-cover">
+          <img src="black-lucifer-2.jpg" alt="کاور آهنگ دیوار">
+        </div>
+
+        <div class="track-info">
+          <h3>دیوار</h3>
+          <small>قطعه موسیقی • محمدرضا کریمی</small>
+
+          <select class="quality-select"
+            onchange="changeAudioQuality(this,'divar.mp3','divar-48k.mp3','divar-32k.mp3')">
+            <option value="original">کیفیت اصلی</option>
+            <option value="medium">کیفیت متوسط</option>
+            <option value="low">حجم کم</option>
+          </select>
+        </div>
+
+        <audio
+          class="track-audio"
+          controls
+          preload="metadata"
+          src="divar.mp3">
+        </audio>
+
+      </article>
+
+    </div>
+
+    <article class="music-card special-track">
+
       <div class="track-number">11</div>
 
       <div class="music-cover">
-        <img src="track-11-cover.png" alt="کاور My Dear Father">
+        <img src="track-11-cover.png" alt="کاور آهنگ My Dear Father">
       </div>
 
       <div class="track-info">
         <h3>My Dear Father</h3>
-        <small>سال ۱۴۰۵ / ۲۰۲۶ • قطعه ویژه</small>
-        <select class="quality-select" onchange="changeTrackQuality('my-dear-father',this.value)">
-          <option value="my-dear-father.mp3">کیفیت اصلی</option>
-          <option value="audio/medium/my-dear-father-48k.mp3">کیفیت متوسط 48K</option>
-          <option value="audio/low/my-dear-father-32k.mp3">کیفیت کم 32K</option>
+        <small>۱۴۰۵ / ۲۰۲۶ • اثر ویژه محمدرضا کریمی</small>
+
+        <select class="quality-select"
+          onchange="changeAudioQuality(this,'my-dear-father.mp3','my-dear-father-48k.mp3','my-dear-father-32k.mp3')">
+          <option value="original">کیفیت اصلی</option>
+          <option value="medium">کیفیت متوسط</option>
+          <option value="low">حجم کم</option>
         </select>
       </div>
 
-      <audio id="audio-my-dear-father" class="track-audio" controls preload="metadata" src="my-dear-father.mp3"></audio>
+      <audio
+        class="track-audio"
+        controls
+        preload="metadata"
+        src="my-dear-father.mp3">
+      </audio>
+
     </article>
 
   </div>
 </section>
 
-<section id="latest-work">
-  <div class="container">
-    <div class="section-head">
-      <div class="eyebrow">LATEST WORK</div>
-      <h2>جدیدترین اثر</h2>
-      <p>معرفی سریع یکی از آثار شاخص موجود در سایت.</p>
-    </div>
-
-    <div class="section-box">
-      <div class="about-grid">
-        <div>
-          <h3>🎵 My Dear Father</h3>
-          <p style="color:var(--muted);margin:14px 0">
-            قطعه My Dear Father یکی از آثار موجود در مجموعه موسیقی وب‌سایت رسمی محمدرضا کریمی است.
-          </p>
-          <p style="color:var(--muted);margin-bottom:17px">سال اثر: ۱۴۰۵ / ۲۰۲۶</p>
-          <a class="btn btn-primary" href="#track11">🎧 پخش اثر</a>
-        </div>
-
-        <div>
-          <img src="track-11-cover.png" alt="جلد قطعه My Dear Father" style="width:100%;max-height:330px;object-fit:cover;border-radius:20px;border:1px solid var(--border)">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="music-archive">
-  <div class="container">
-    <div class="section-head">
-      <div class="eyebrow">MUSIC ARCHIVE</div>
-      <h2>آرشیو کامل موسیقی</h2>
-      <p>جست‌وجوی سریع میان قطعات موسیقی سایت.</p>
-    </div>
-
-    <div class="search-box">
-      <input id="musicSearch" type="search" placeholder="نام آهنگ را جست‌وجو کنید..." oninput="filterMusicArchive()">
-      <button class="btn btn-primary" onclick="filterMusicArchive()">🔎 جست‌وجو</button>
-    </div>
-
-    <div id="musicArchiveList" class="archive-grid"></div>
-  </div>
-</section>
-
 <section id="books">
+
   <div class="container">
+
     <div class="section-head">
       <div class="eyebrow">BOOKS</div>
       <h2>کتاب‌ها</h2>
-      <p>آثار ادبی محمدرضا کریمی.</p>
+      <p>
+        مجموعه کتاب‌های محمدرضا کریمی.
+      </p>
     </div>
 
-    <div id="bookList" class="grid book-grid"></div>
-  </div>
-</section>
+    <div class="book-grid grid">
 
-<section id="books-archive">
-  <div class="container">
-    <div class="section-head">
-      <div class="eyebrow">BOOK ARCHIVE</div>
-      <h2>آرشیو کتاب‌ها</h2>
-      <p>فهرست سریع کتاب‌های موجود.</p>
+      <article class="book-card">
+        <div class="book-cover">
+          <img src="book-1.jpg" alt="مرگ بی‌انتهای ۱">
+        </div>
+        <div class="book-body">
+          <h3>مرگ بی‌انتهای ۱</h3>
+          <div class="price">۵۰۰٬۰۰۰ تومان</div>
+          <button
+            class="btn btn-primary btn-small"
+            onclick="addToCart('book-1')">
+            🛒 افزودن به سبد
+          </button>
+        </div>
+      </article>
+
+      <article class="book-card">
+        <div class="book-cover">
+          <img src="book-2.png" alt="مرگ بی‌انتهای ۲">
+        </div>
+        <div class="book-body">
+          <h3>مرگ بی‌انتهای ۲</h3>
+          <div class="price">۲۰۰٬۰۰۰ تومان</div>
+          <button
+            class="btn btn-primary btn-small"
+            onclick="addToCart('book-2')">
+            🛒 افزودن به سبد
+          </button>
+        </div>
+      </article>
+
+      <article class="book-card">
+        <div class="book-cover">
+          <img src="book-3.jpg" alt="گلای سرخ و نارنجی پرپر">
+        </div>
+        <div class="book-body">
+          <h3>گلای سرخ و نارنجی پرپر</h3>
+          <div class="price">۶۰۰٬۰۰۰ تومان</div>
+          <button
+            class="btn btn-primary btn-small"
+            onclick="addToCart('book-3')">
+            🛒 افزودن به سبد
+          </button>
+        </div>
+      </article>
+
+      <article class="book-card">
+        <div class="book-cover">
+          <img src="book-4-back.jpg" alt="دیوار تنهایی">
+        </div>
+        <div class="book-body">
+          <h3>دیوار تنهایی</h3>
+          <div class="price">۲۰۰٬۰۰۰ تومان</div>
+          <button
+            class="btn btn-primary btn-small"
+            onclick="addToCart('book-4')">
+            🛒 افزودن به سبد
+          </button>
+        </div>
+      </article>
+
+      <article class="book-card">
+        <div class="book-cover">
+          <img src="book-5-saat-sezdahom.jpg" alt="ساعت سیزدهم">
+        </div>
+        <div class="book-body">
+          <h3>ساعت سیزدهم</h3>
+          <div class="price">۷۰۰٬۰۰۰ تومان</div>
+
+          <div class="card-actions">
+
+            <a
+              class="btn btn-secondary btn-small"
+              href="books-pdf/saat-sezdahom.pdf#toolbar=0&navpanes=0"
+              target="_blank"
+              rel="noopener">
+              📖 مطالعه
+            </a>
+
+            <button
+              class="btn btn-primary btn-small"
+              onclick="addToCart('book-5')">
+              🛒 افزودن
+            </button>
+
+          </div>
+        </div>
+      </article>
+
+      <article class="book-card">
+        <div class="book-cover">
+          <img src="book-6-trump.jpg" alt="رئیس جمهور ترامپ وحشی">
+        </div>
+
+        <div class="book-body">
+
+          <h3>رئیس جمهور ترامپ وحشی</h3>
+
+          <div class="price">۳۳۳٬۰۰۰ تومان</div>
+
+          <div class="card-actions">
+
+            <a
+              class="btn btn-secondary btn-small"
+              href="books-pdf/trump-wild.pdf#toolbar=0&navpanes=0"
+              target="_blank"
+              rel="noopener">
+              📖 مطالعه
+            </a>
+
+            <button
+              class="btn btn-primary btn-small"
+              onclick="addToCart('book-6')">
+              🛒 افزودن
+            </button>
+
+          </div>
+
+        </div>
+      </article>
+
     </div>
-
-    <div id="bookArchiveList" class="archive-grid"></div>
   </div>
 </section>
-
 <section id="video">
   <div class="container">
     <div class="section-head">
@@ -2350,7 +2813,10 @@ footer a{
         <h3>کانال یوتیوب</h3>
         <p>برای مشاهده محتوای بیشتر به کانال یوتیوب مراجعه کنید.</p>
         <br>
-        <a class="btn btn-primary btn-small" href="https://youtube.com/@raperstore1405?si=3pqDAnfc6gwahOTO" target="_blank" rel="noopener">یوتیوب</a>
+        <a class="btn btn-primary btn-small"
+           href="https://youtube.com/@raperstore1405?si=3pqDAnfc6gwahOTO"
+           target="_blank"
+           rel="noopener">یوتیوب</a>
       </article>
 
       <article class="new-card">
@@ -2372,12 +2838,18 @@ footer a{
     <div class="about-grid">
       <div class="about-card">
         <h3>🎤 هنرمند و خواننده</h3>
-        <p>محمدرضا کریمی در حوزه موسیقی و تولید آثار هنری فعالیت دارد و مجموعه‌ای از قطعات و آلبوم‌ها را منتشر کرده است.</p>
+        <p>
+          محمدرضا کریمی در حوزه موسیقی و تولید آثار هنری فعالیت دارد
+          و مجموعه‌ای از قطعات و آلبوم‌ها را منتشر کرده است.
+        </p>
       </div>
 
       <div class="about-card">
         <h3>✍️ نویسنده</h3>
-        <p>بخشی از فعالیت‌های او به نویسندگی و انتشار کتاب اختصاص دارد و آثار مختلفی در این زمینه در سایت معرفی شده‌اند.</p>
+        <p>
+          بخشی از فعالیت‌های او به نویسندگی و انتشار کتاب اختصاص دارد
+          و آثار مختلفی در این زمینه در سایت معرفی شده‌اند.
+        </p>
       </div>
     </div>
   </div>
@@ -2392,29 +2864,45 @@ footer a{
     </div>
 
     <div class="grid contact-grid">
+
       <div class="contact-card">
         <div class="contact-icon">📧</div>
         <h3>ایمیل</h3>
-        <a href="mailto:rezakarimi11228@gmail.com">rezakarimi11228@gmail.com</a>
+        <a href="mailto:rezakarimi11228@gmail.com">
+          rezakarimi11228@gmail.com
+        </a>
       </div>
 
       <div class="contact-card">
         <div class="contact-icon">✈️</div>
         <h3>تلگرام</h3>
-        <a href="https://t.me/Abfamozvar1406app" target="_blank" rel="noopener">ارتباط در تلگرام</a>
+        <a href="https://t.me/Abfamozvar1406app"
+           target="_blank"
+           rel="noopener">
+          ارتباط در تلگرام
+        </a>
       </div>
 
       <div class="contact-card">
         <div class="contact-icon">🌐</div>
         <h3>وب‌سایت دیگر</h3>
-        <a href="https://abfamazvar2027.simdif.com" target="_blank" rel="noopener">مشاهده وب‌سایت</a>
+        <a href="https://abfamazvar2027.simdif.com"
+           target="_blank"
+           rel="noopener">
+          مشاهده وب‌سایت
+        </a>
       </div>
 
       <div class="contact-card">
         <div class="contact-icon">▶️</div>
         <h3>یوتیوب</h3>
-        <a href="https://youtube.com/@raperstore1405?si=3pqDAnfc6gwahOTO" target="_blank" rel="noopener">کانال یوتیوب</a>
+        <a href="https://youtube.com/@raperstore1405?si=3pqDAnfc6gwahOTO"
+           target="_blank"
+           rel="noopener">
+          کانال یوتیوب
+        </a>
       </div>
+
     </div>
   </div>
 </section>
@@ -2428,23 +2916,33 @@ footer a{
     </div>
 
     <div class="new-grid">
+
       <article class="new-card">
         <div class="new-icon">📰</div>
         <h3>انتشار آثار</h3>
-        <p>اخبار مربوط به انتشار موسیقی، کتاب و آثار دیجیتال در این بخش قابل معرفی است.</p>
+        <p>
+          اخبار مربوط به انتشار موسیقی، کتاب و آثار دیجیتال
+          در این بخش قابل معرفی است.
+        </p>
       </article>
 
       <article class="new-card">
         <div class="new-icon">📢</div>
         <h3>اطلاعیه‌های رسمی</h3>
-        <p>اطلاعیه‌های مهم وب‌سایت و تغییرات خدمات از این مسیر قابل دسترسی هستند.</p>
+        <p>
+          اطلاعیه‌های مهم وب‌سایت و تغییرات خدمات
+          از این مسیر قابل دسترسی هستند.
+        </p>
       </article>
 
       <article class="new-card">
         <div class="new-icon">🔔</div>
         <h3>به‌روزرسانی‌ها</h3>
-        <p>آخرین تغییرات و توسعه‌های وب‌سایت در بخش اخبار نیز ثبت می‌شوند.</p>
+        <p>
+          آخرین تغییرات و توسعه‌های وب‌سایت در بخش اخبار نیز ثبت می‌شوند.
+        </p>
       </article>
+
     </div>
   </div>
 </section>
@@ -2458,6 +2956,7 @@ footer a{
     </div>
 
     <div class="grid news-grid">
+
       <article class="news-card">
         <div class="news-date">۱۴۰۵ / ۲۰۲۶</div>
         <h3>انتشار آثار جدید موسیقی</h3>
@@ -2479,57 +2978,11 @@ footer a{
       <article class="news-card">
         <div class="news-date">۱۴۰۵ / ۲۰۲۶</div>
         <h3>بازی‌ها و برنامه‌ها</h3>
-        <p>مجموعه بازی‌ها و برنامه‌های جدید در فروشگاه قرار گرفت.</p>
+        <p>
+          مجموعه بازی‌ها و برنامه‌های جدید در فروشگاه سایت قرار گرفته‌اند.
+        </p>
       </article>
 
-      <article class="news-card">
-        <div class="news-date">۱۴۰۵ / ۲۰۲۶</div>
-        <h3>گسترش فروشگاه</h3>
-        <p>بخش فروشگاه برای آثار و محصولات مختلف توسعه پیدا کرد.</p>
-      </article>
-
-      <article class="news-card">
-        <div class="news-date">۱۴۰۵ / ۲۰۲۶</div>
-        <h3>به‌روزرسانی وب‌سایت</h3>
-        <p>ساختار سایت برای استفاده بهتر در موبایل و دسکتاپ بازطراحی شد.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section id="faq">
-  <div class="container">
-    <div class="section-head">
-      <div class="eyebrow">FAQ</div>
-      <h2>سؤالات متداول</h2>
-      <p>پاسخ به پرسش‌های متداول درباره سایت، آثار و ارتباط.</p>
-    </div>
-
-    <div class="faq-list">
-      <details class="faq-item">
-        <summary>محمدرضا کریمی کیست؟</summary>
-        <div class="faq-answer">محمدرضا کریمی خواننده، نویسنده و هنرمند محلاتی است و در زمینه موسیقی، نویسندگی و تولید آثار دیجیتال فعالیت دارد.</div>
-      </details>
-
-      <details class="faq-item">
-        <summary>آثار موسیقی را چگونه گوش کنیم؟</summary>
-        <div class="faq-answer">از بخش موسیقی می‌توانید هر قطعه را مستقیماً با پخش‌کننده سایت گوش کنید.</div>
-      </details>
-
-      <details class="faq-item">
-        <summary>کتاب‌ها چگونه سفارش داده می‌شوند؟</summary>
-        <div class="faq-answer">کتاب موردنظر را از بخش کتاب‌ها یا فروشگاه به سبد خرید اضافه کنید و سپس سفارش را از طریق ایمیل ارسال کنید.</div>
-      </details>
-
-      <details class="faq-item">
-        <summary>چگونه می‌توان برای تبلیغات درخواست داد؟</summary>
-        <div class="faq-answer">از بخش تبلیغات ویژه و فرم درخواست تبلیغات استفاده کنید.</div>
-      </details>
-
-      <details class="faq-item">
-        <summary>چگونه می‌توان برای همکاری تماس گرفت؟</summary>
-        <div class="faq-answer">ایمیل، تلگرام و سایر راه‌های ارتباطی در بخش همکاری و تماس قرار دارند.</div>
-      </details>
     </div>
   </div>
 </section>
@@ -2543,16 +2996,47 @@ footer a{
     </div>
 
     <div class="gallery-grid">
-      <div class="gallery-item"><img src="portrait.png" alt="گالری محمدرضا کریمی"></div>
-      <div class="gallery-item"><img src="black-lucifer-1.jpg" alt="لوسیفر سیاه"></div>
-      <div class="gallery-item"><img src="black-lucifer-2.jpg" alt="لوسیفر سیاه ۲"></div>
-      <div class="gallery-item"><img src="track-11-cover.png" alt="My Dear Father"></div>
-      <div class="gallery-item"><img src="book-1.jpg" alt="مرگ بی‌انتهای ۱"></div>
-      <div class="gallery-item"><img src="book-2.png" alt="مرگ بی‌انتهای ۲"></div>
-      <div class="gallery-item"><img src="book-3.jpg" alt="گلای سرخ و نارنجی پرپر"></div>
-      <div class="gallery-item"><img src="book-4-back.jpg" alt="دیوار تنهایی"></div>
-      <div class="gallery-item"><img src="book-5-saat-sezdahom.jpg" alt="ساعت سیزدهم"></div>
-      <div class="gallery-item"><img src="book-6-trump.jpg" alt="رئیس جمهور ترامپ وحشی"></div>
+
+      <div class="gallery-item">
+        <img src="portrait.png" alt="گالری محمدرضا کریمی">
+      </div>
+
+      <div class="gallery-item">
+        <img src="black-lucifer-1.jpg" alt="لوسیفر سیاه">
+      </div>
+
+      <div class="gallery-item">
+        <img src="black-lucifer-2.jpg" alt="لوسیفر سیاه ۲">
+      </div>
+
+      <div class="gallery-item">
+        <img src="track-11-cover.png" alt="My Dear Father">
+      </div>
+
+      <div class="gallery-item">
+        <img src="book-1.jpg" alt="مرگ بی‌انتهای ۱">
+      </div>
+
+      <div class="gallery-item">
+        <img src="book-2.png" alt="مرگ بی‌انتهای ۲">
+      </div>
+
+      <div class="gallery-item">
+        <img src="book-3.jpg" alt="گلای سرخ و نارنجی پرپر">
+      </div>
+
+      <div class="gallery-item">
+        <img src="book-4-back.jpg" alt="دیوار تنهایی">
+      </div>
+
+      <div class="gallery-item">
+        <img src="book-5-saat-sezdahom.jpg" alt="ساعت سیزدهم">
+      </div>
+
+      <div class="gallery-item">
+        <img src="book-6-trump.jpg" alt="رئیس جمهور ترامپ وحشی">
+      </div>
+
     </div>
   </div>
 </section>
@@ -2566,23 +3050,32 @@ footer a{
     </div>
 
     <div class="comment-grid">
+
       <article class="comment-card">
         <div class="stars">★★★★★</div>
-        <p>طراحی سایت و دسترسی به بخش‌های موسیقی و کتاب بسیار ساده و مرتب است.</p>
+        <p>
+          طراحی سایت و دسترسی به بخش‌های موسیقی و کتاب بسیار ساده و مرتب است.
+        </p>
         <strong>مخاطب سایت</strong>
       </article>
 
       <article class="comment-card">
         <div class="stars">★★★★★</div>
-        <p>وجود موسیقی، کتاب، بازی و فروشگاه در یک سایت، دسترسی به آثار را آسان می‌کند.</p>
+        <p>
+          وجود موسیقی، کتاب، بازی و فروشگاه در یک سایت،
+          دسترسی به آثار را آسان می‌کند.
+        </p>
         <strong>بازدیدکننده</strong>
       </article>
 
       <article class="comment-card">
         <div class="stars">★★★★★</div>
-        <p>بخش‌های مختلف سایت برای معرفی آثار جدید قابل توسعه هستند.</p>
+        <p>
+          بخش‌های مختلف سایت برای معرفی آثار جدید قابل توسعه هستند.
+        </p>
         <strong>کاربر سایت</strong>
       </article>
+
     </div>
   </div>
 </section>
@@ -2592,7 +3085,10 @@ footer a{
     <div class="section-head">
       <div class="eyebrow">GAMES & APPS</div>
       <h2>بازی‌ها و برنامه‌ها</h2>
-      <p>همه بازی‌ها و برنامه‌ها با قیمت ۳۰۰,۰۰۰ تومان در فروشگاه قرار دارند.</p>
+      <p>
+        همه بازی‌ها و برنامه‌ها با قیمت ۳۰۰,۰۰۰ تومان
+        در فروشگاه قرار دارند.
+      </p>
     </div>
 
     <div id="gameList" class="grid game-grid"></div>
@@ -2608,23 +3104,32 @@ footer a{
     </div>
 
     <div class="event-grid">
+
       <article class="event-card">
         <span class="event-date">۱۴۰۵</span>
         <h3>فعالیت موسیقی</h3>
-        <p>ادامه تولید و معرفی آثار موسیقی جدید در وب‌سایت رسمی.</p>
+        <p>
+          ادامه تولید و معرفی آثار موسیقی جدید در وب‌سایت رسمی.
+        </p>
       </article>
 
       <article class="event-card">
         <span class="event-date">۱۴۰۵</span>
         <h3>توسعه آثار مکتوب</h3>
-        <p>معرفی و عرضه کتاب‌های موجود در مجموعه.</p>
+        <p>
+          معرفی و عرضه کتاب‌های موجود در مجموعه.
+        </p>
       </article>
 
       <article class="event-card">
         <span class="event-date">۱۴۰۵ / ۲۰۲۶</span>
         <h3>توسعه سایت</h3>
-        <p>توسعه بخش‌های جدید برای معرفی بهتر آثار و ارتباط با مخاطبان.</p>
+        <p>
+          توسعه بخش‌های جدید برای معرفی بهتر آثار
+          و ارتباط با مخاطبان.
+        </p>
       </article>
+
     </div>
   </div>
 </section>
@@ -2635,7 +3140,10 @@ footer a{
     <div class="section-head">
       <div class="eyebrow">ONLINE STORE</div>
       <h2>فروشگاه مستقل</h2>
-      <p>همه محصولات با کد اختصاصی نمایش داده می‌شوند تا هنگام سفارش کاملاً مشخص باشند.</p>
+      <p>
+        همه محصولات با کد اختصاصی نمایش داده می‌شوند
+        تا هنگام سفارش کاملاً مشخص باشند.
+      </p>
     </div>
 
     <div class="store-shell">
@@ -2643,15 +3151,21 @@ footer a{
       <div class="store-toolbar">
         <div>
           <strong>🛍 فروشگاه رسمی محمدرضا کریمی</strong>
-          <div><span>محصولات: آلبوم، موسیقی، کتاب، بازی و برنامه</span></div>
+          <div>
+            <span>محصولات: آلبوم، موسیقی، کتاب، بازی و برنامه</span>
+          </div>
         </div>
-        <a class="btn btn-danger btn-small" href="#purchase-rules">قوانین خرید</a>
+
+        <a class="btn btn-danger btn-small" href="#purchase-rules">
+          قوانین خرید
+        </a>
       </div>
 
       <div id="storeList" class="grid store-grid"></div>
 
       <div class="notice">
-        ⚠️ هر محصول دارای یک «کد محصول» اختصاصی است. در زمان سفارش این کد نیز در ایمیل سفارش ارسال می‌شود.
+        ⚠️ هر محصول دارای یک «کد محصول» اختصاصی است.
+        در زمان سفارش این کد نیز در ایمیل سفارش ارسال می‌شود.
       </div>
 
     </div>
@@ -2667,6 +3181,7 @@ footer a{
     </div>
 
     <div class="achievement-grid">
+
       <article class="achievement-card">
         <div class="big">🎵</div>
         <h3>۱۱ قطعه</h3>
@@ -2690,6 +3205,7 @@ footer a{
         <h3>وب‌سایت رسمی</h3>
         <p>مرجع یکپارچه آثار</p>
       </article>
+
     </div>
   </div>
 </section>
@@ -2700,10 +3216,13 @@ footer a{
     <div class="section-head">
       <div class="eyebrow">ADVERTISING</div>
       <h2>تبلیغات ویژه</h2>
-      <p>امکان معرفی آلبوم، بازی، کتاب و تبلیغات متنی یا تصویری.</p>
+      <p>
+        امکان معرفی آلبوم، بازی، کتاب و تبلیغات متنی یا تصویری.
+      </p>
     </div>
 
     <div class="grid ad-grid">
+
       <div class="ad-card">
         <div class="ad-icon">🎵</div>
         <h3>تبلیغ آلبوم</h3>
@@ -2731,21 +3250,26 @@ footer a{
         <p>تبلیغات سفارشی برای کسب‌وکارها و آثار.</p>
         <strong>۱,۰۰۰,۰۰۰ تومان</strong>
       </div>
-    </div>
 
+    </div>
   </div>
 </section>
 
 <section id="advertising-form">
   <div class="container">
+
     <div class="section-head">
       <div class="eyebrow">AD REQUEST</div>
       <h2>فرم درخواست تبلیغات</h2>
-      <p>اطلاعات خود را وارد کنید تا درخواست از طریق ایمیل ارسال شود.</p>
+      <p>
+        اطلاعات خود را وارد کنید تا درخواست از طریق ایمیل ارسال شود.
+      </p>
     </div>
 
     <div class="section-box">
+
       <form onsubmit="sendAdvertisingRequest(event)">
+
         <div class="form-grid">
 
           <div class="field">
@@ -2783,20 +3307,26 @@ footer a{
 
         <br>
 
-        <button class="btn btn-primary" type="submit">📧 ارسال درخواست</button>
+        <button class="btn btn-primary" type="submit">
+          📧 ارسال درخواست
+        </button>
+
       </form>
+
     </div>
   </div>
 </section>
 
 <section id="advertising-rules">
   <div class="container">
+
     <div class="section-head">
       <div class="eyebrow">AD RULES</div>
       <h2>قوانین تبلیغات</h2>
     </div>
 
     <div class="section-box">
+
       <ol class="rules">
         <li>محتوای تبلیغ باید قانونی و قابل انتشار باشد.</li>
         <li>مسئولیت صحت اطلاعات تبلیغ بر عهده سفارش‌دهنده است.</li>
@@ -2807,12 +3337,14 @@ footer a{
         <li>ثبت فرم به معنی تأیید نهایی سفارش نیست.</li>
         <li>هماهنگی نهایی از طریق ایمیل انجام خواهد شد.</li>
       </ol>
+
     </div>
   </div>
 </section>
 
 <section id="collaboration-orders">
   <div class="container">
+
     <div class="section-head">
       <div class="eyebrow">COLLABORATION ORDERS</div>
       <h2>همکاری و سفارش آثار</h2>
@@ -2820,10 +3352,31 @@ footer a{
     </div>
 
     <div class="quick-grid">
-      <a class="quick-card" href="mailto:rezakarimi11228@gmail.com"><span>📧</span>ارسال ایمیل</a>
-      <a class="quick-card" href="https://t.me/Abfamozvar1406app" target="_blank" rel="noopener"><span>✈️</span>تلگرام</a>
-      <a class="quick-card" href="#advertising-form"><span>📢</span>درخواست تبلیغات</a>
-      <a class="quick-card" href="#store"><span>🛒</span>سفارش از فروشگاه</a>
+
+      <a class="quick-card"
+         href="mailto:rezakarimi11228@gmail.com">
+        <span>📧</span>
+        ارسال ایمیل
+      </a>
+
+      <a class="quick-card"
+         href="https://t.me/Abfamozvar1406app"
+         target="_blank"
+         rel="noopener">
+        <span>✈️</span>
+        تلگرام
+      </a>
+
+      <a class="quick-card" href="#advertising-form">
+        <span>📢</span>
+        درخواست تبلیغات
+      </a>
+
+      <a class="quick-card" href="#store">
+        <span>🛒</span>
+        سفارش از فروشگاه
+      </a>
+
     </div>
   </div>
 </section>
@@ -2834,40 +3387,58 @@ footer a{
     <div class="section-head">
       <div class="eyebrow">DIGITAL CENTER</div>
       <h2>ساعت و تاریخ دیجیتال</h2>
-      <p>ساعت زنده، تاریخ شمسی و تاریخ میلادی به‌صورت دیجیتال نمایش داده می‌شود.</p>
+      <p>
+        ساعت زنده، تاریخ شمسی و تاریخ میلادی به‌صورت دیجیتال نمایش داده می‌شود.
+      </p>
     </div>
 
     <div class="digital-box">
 
       <div class="digital-clock-panel">
         <div class="digital-label">ساعت دیجیتال</div>
-        <div id="digitalClock" class="digital-time">00:00</div>
-        <div id="digitalClockSeconds" class="digital-seconds">00</div>
-        <div style="margin-top:12px;opacity:.85;font-size:11px">زمان دستگاه شما</div>
+
+        <div id="digitalClock" class="digital-time">
+          00:00
+        </div>
+
+        <div id="digitalClockSeconds" class="digital-seconds">
+          00
+        </div>
+
+        <div style="margin-top:12px;opacity:.85;font-size:11px">
+          زمان دستگاه شما
+        </div>
       </div>
 
       <div class="digital-date">
+
         <div class="digital-date-row">
           <span>تاریخ شمسی</span>
-          <strong id="digitalPersianDate">در حال بارگذاری...</strong>
+          <strong id="digitalPersianDate">
+            در حال بارگذاری...
+          </strong>
         </div>
 
         <div class="digital-date-row">
           <span>تاریخ میلادی</span>
-          <strong id="digitalGregorianDate">در حال بارگذاری...</strong>
+          <strong id="digitalGregorianDate">
+            در حال بارگذاری...
+          </strong>
         </div>
 
         <div class="digital-date-row">
           <span>روز هفته</span>
-          <strong id="digitalWeekday">در حال بارگذاری...</strong>
+          <strong id="digitalWeekday">
+            در حال بارگذاری...
+          </strong>
         </div>
 
         <div class="digital-date-row">
           <span>وضعیت</span>
           <strong>🟢 آنلاین</strong>
         </div>
-      </div>
 
+      </div>
     </div>
   </div>
 </section>
@@ -2884,119 +3455,39 @@ footer a{
     <div class="calendar-wrap">
 
       <div class="calendar-controls">
-        <button onclick="changeCalendarYear(-1)">‹ سال قبل</button>
+
+        <button onclick="changeCalendarYear(-1)">
+          ‹ سال قبل
+        </button>
+
         <select id="calendarYear" onchange="renderCalendar()"></select>
-        <button onclick="changeCalendarYear(1)">سال بعد ›</button>
+
+        <button onclick="changeCalendarYear(1)">
+          سال بعد ›
+        </button>
+
       </div>
 
       <div id="calendarTitle" class="calendar-title"></div>
+
       <div id="calendarGrid"></div>
 
     </div>
   </div>
 </section>
-
-<section id="ai-assistant">
-  <div class="container">
-
-    <div class="section-head">
-      <div class="eyebrow">AI ASSISTANT</div>
-      <h2>هوش مصنوعی سایت</h2>
-      <p>برای پرسش درباره سایت، موسیقی، کتاب‌ها، فروشگاه، سفارش، تماس و بسیاری از موضوعات دیگر سؤال خود را بنویسید.</p>
-    </div>
-
-    <div class="ai-box">
-
-      <div class="ai-intro">
-        <div class="ai-icon">🤖</div>
-        <h3>دستیار هوشمند</h3>
-        <p style="margin-top:8px">
-          این دستیار به اطلاعات بخش‌های مختلف همین وب‌سایت دسترسی محلی دارد.
-          برای استفاده از یک مدل هوش مصنوعی کامل و عمومی می‌توانید از لینک ChatGPT نیز استفاده کنید.
-        </p>
-
-        <br>
-
-        <a class="btn btn-secondary btn-small" style="background:#fff;color:var(--red-dark)" href="https://chatgpt.com/" target="_blank" rel="noopener">
-          باز کردن ChatGPT
-        </a>
-      </div>
-
-      <div class="ai-chat">
-
-        <div id="aiMessages" class="ai-messages">
-          <div class="ai-message bot">
-            سلام 👋 من دستیار سایت محمدرضا کریمی هستم. درباره موسیقی، کتاب‌ها، فروشگاه، بازی‌ها، تبلیغات و راه‌های ارتباطی سؤال کنید.
-          </div>
-        </div>
-
-        <form class="ai-form" onsubmit="sendAiQuestion(event)">
-          <input id="aiInput" autocomplete="off" placeholder="مثلاً: قیمت کتاب ساعت سیزدهم چقدر است؟" required>
-          <button class="btn btn-primary" type="submit">ارسال</button>
-        </form>
-
-        <div class="ai-note">
-          برای هوش مصنوعی عمومی و پاسخ به موضوعات خارج از اطلاعات سایت، از دکمه ChatGPT استفاده کنید.
-        </div>
-
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section id="game-files">
-  <div class="container">
-    <div class="section-head">
-      <div class="eyebrow">GAME FILES</div>
-      <h2>فایل‌های بازی و برنامه</h2>
-    </div>
-
-    <div class="section-box">
-      <p>فایل‌های APK پس از ثبت سفارش در فروشگاه و هماهنگی خرید در اختیار خریدار قرار می‌گیرند.</p>
-
-      <div class="notice">
-        📦 فایل‌ها برای استفاده روی دستگاه‌های سازگار با Android ارائه شده‌اند.
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="purchase-rules">
-  <div class="container">
-    <div class="section-head">
-      <div class="eyebrow">PURCHASE RULES</div>
-      <h2>قوانین خرید</h2>
-    </div>
-
-    <div class="section-box">
-      <ol class="rules">
-        <li>محصول موردنظر را به سبد خرید اضافه کنید.</li>
-        <li>تعداد هر محصول را در سبد خرید بررسی کنید.</li>
-        <li>ثبت سفارش از طریق ایمیل انجام می‌شود.</li>
-        <li>موارد دارای قیمت نامشخص قبل از پرداخت استعلام می‌شوند.</li>
-        <li>روش پرداخت پس از بررسی سفارش هماهنگ خواهد شد.</li>
-        <li>فایل‌های دیجیتال پس از تأیید پرداخت تحویل داده می‌شوند.</li>
-        <li>اطلاعات تماس صحیح برای پیگیری سفارش ضروری است.</li>
-        <li>این سایت اطلاعات کارت بانکی یا رمز عبور شما را دریافت نمی‌کند.</li>
-      </ol>
-    </div>
-  </div>
-</section>
-
 <section id="site-map">
   <div class="container">
 
     <div class="section-head">
       <div class="eyebrow">SITE MAP</div>
-      <h2>نقشه داخلی سایت</h2>
-      <p>دسترسی سریع به بخش‌های اصلی وب‌سایت.</p>
+      <h2>نقشه سایت</h2>
+      <p>دسترسی سریع به تمام بخش‌های وب‌سایت.</p>
     </div>
 
     <div class="section-box">
-      <ul class="sitemap-grid">
-        <li><a href="#home">خانه</a></li>
-        <li><a href="#artist-profile">معرفی هنرمند</a></li>
+      <ul class="site-map-list">
+        <li><a href="#hero">صفحه اصلی</a></li>
+        <li><a href="#artist-profile">پروفایل هنرمند</a></li>
         <li><a href="#biography">زندگینامه</a></li>
         <li><a href="#albums">آلبوم‌ها</a></li>
         <li><a href="#selected-works">آثار منتخب</a></li>
@@ -3024,7 +3515,6 @@ footer a{
         <li><a href="#collaboration-orders">سفارش و همکاری</a></li>
         <li><a href="#digital-center">ساعت دیجیتال</a></li>
         <li><a href="#calendar">تقویم دیجیتال</a></li>
-        <li><a href="#ai-assistant">هوش مصنوعی</a></li>
         <li><a href="#game-files">فایل‌های بازی</a></li>
         <li><a href="#purchase-rules">قوانین خرید</a></li>
         <li><a href="#faq">سؤالات متداول</a></li>
@@ -3044,15 +3534,24 @@ footer a{
       <p>برای سفارش، همکاری، تبلیغات و ارتباط مستقیم.</p>
     </div>
 
-    <div class="section-box" style="text-align:center">
-      <h3>📧 ایمیل رسمی</h3>
+    <div class="section-box contact-main">
 
-      <p style="margin:10px 0 18px;color:var(--muted)">
+      <div class="contact-main-icon">📧</div>
+
+      <h3>ایمیل رسمی</h3>
+
+      <p>
         rezakarimi11228@gmail.com
       </p>
 
-      <a class="btn btn-primary" href="mailto:rezakarimi11228@gmail.com">ارسال ایمیل</a>
+      <a
+        class="btn btn-primary"
+        href="mailto:rezakarimi11228@gmail.com">
+        ارسال ایمیل
+      </a>
+
     </div>
+
   </div>
 </section>
 
@@ -3065,6 +3564,7 @@ footer a{
 
       <div>
         <h3>محمدرضا کریمی</h3>
+
         <p>
           وب‌سایت رسمی محمدرضا کریمی؛
           موسیقی، نویسندگی، ویدئو، بازی، کتاب و فروشگاه.
@@ -3073,6 +3573,7 @@ footer a{
 
       <div>
         <h3>دسترسی سریع</h3>
+
         <div class="footer-links">
           <a href="#biography">زندگینامه</a>
           <a href="#music">موسیقی</a>
@@ -3080,7 +3581,7 @@ footer a{
           <a href="#games">بازی‌ها</a>
           <a href="#store">فروشگاه</a>
           <a href="#digital-center">ساعت دیجیتال</a>
-          <a href="#ai-assistant">هوش مصنوعی</a>
+          <a href="#calendar">تقویم دیجیتال</a>
           <a href="#faq">سؤالات متداول</a>
           <a href="#contact">تماس</a>
         </div>
@@ -3088,11 +3589,34 @@ footer a{
 
       <div>
         <h3>ارتباط</h3>
+
         <div class="footer-links">
-          <a href="mailto:rezakarimi11228@gmail.com">ایمیل</a>
-          <a href="https://t.me/Abfamozvar1406app" target="_blank" rel="noopener">تلگرام</a>
-          <a href="https://youtube.com/@raperstore1405?si=3pqDAnfc6gwahOTO" target="_blank" rel="noopener">یوتیوب</a>
-          <a href="https://abfamazvar2027.simdif.com" target="_blank" rel="noopener">وب‌سایت دیگر</a>
+
+          <a href="mailto:rezakarimi11228@gmail.com">
+            ایمیل
+          </a>
+
+          <a
+            href="https://t.me/Abfamozvar1406app"
+            target="_blank"
+            rel="noopener">
+            تلگرام
+          </a>
+
+          <a
+            href="https://youtube.com/@raperstore1405?si=3pqDAnfc6gwahOTO"
+            target="_blank"
+            rel="noopener">
+            یوتیوب
+          </a>
+
+          <a
+            href="https://abfamazvar2027.simdif.com"
+            target="_blank"
+            rel="noopener">
+            وب‌سایت دیگر
+          </a>
+
         </div>
       </div>
 
@@ -3105,832 +3629,221 @@ footer a{
   </div>
 </footer>
 
-<audio id="backgroundMusic" src="yaghut.mp3" loop preload="metadata"></audio>
+
+<!-- موسیقی زمینه -->
+<audio
+  id="backgroundMusic"
+  src="yaghut.mp3"
+  loop
+  preload="metadata">
+</audio>
+
 
 <div class="bg-music-player">
-  <span class="bg-music-label">🎵 موسیقی زمینه</span>
 
-  <button id="bgMusicToggle" class="bg-music-btn" onclick="toggleBackgroundMusic()" aria-label="پخش یا توقف موسیقی زمینه">▶</button>
+  <span class="bg-music-label">
+    🎵 موسیقی زمینه
+  </span>
 
-  <button id="bgMusicMute" class="bg-music-btn" onclick="toggleBackgroundMute()" aria-label="قطع یا وصل صدا">🔊</button>
+  <button
+    id="bgMusicToggle"
+    class="bg-music-btn"
+    onclick="toggleBackgroundMusic()"
+    aria-label="پخش یا توقف موسیقی زمینه">
+    ▶
+  </button>
+
+  <button
+    id="bgMusicMute"
+    class="bg-music-btn"
+    onclick="toggleBackgroundMute()"
+    aria-label="قطع یا وصل صدا">
+    🔊
+  </button>
+
 </div>
 
-<button class="ai-float" onclick="document.getElementById('ai-assistant').scrollIntoView({behavior:'smooth'})" aria-label="هوش مصنوعی">🤖</button>
 
-<button class="cart-float" onclick="toggleCart()">
+<!-- سبد خرید شناور -->
+<button
+  class="cart-float"
+  onclick="toggleCart()">
+
   🛒
   <span>سبد</span>
-  <span class="cart-count" id="cartCount">۰</span>
+  <span
+    class="cart-count"
+    id="cartCount">
+    ۰
+  </span>
+
 </button>
 
-<div class="overlay" id="overlay" onclick="closeCart()"></div>
 
-<aside class="cart-panel" id="cartPanel">
+<div
+  class="overlay"
+  id="overlay"
+  onclick="closeCart()">
+</div>
+
+
+<aside
+  class="cart-panel"
+  id="cartPanel">
 
   <div class="cart-head">
-    <strong>🛒 سبد خرید</strong>
-    <button class="icon-btn" onclick="closeCart()">×</button>
+
+    <strong>
+      🛒 سبد خرید
+    </strong>
+
+    <button
+      class="icon-btn"
+      onclick="closeCart()">
+      ×
+    </button>
+
   </div>
 
-  <div class="cart-items" id="cartItems"></div>
+
+  <div
+    class="cart-items"
+    id="cartItems">
+  </div>
+
 
   <div class="cart-foot">
 
     <div class="cart-total">
-      <span>مجموع</span>
-      <span id="cartTotal">۰ تومان</span>
+
+      <span>
+        مجموع
+      </span>
+
+      <span id="cartTotal">
+        ۰ تومان
+      </span>
+
     </div>
 
+
     <div style="display:grid;gap:8px">
-      <button class="btn btn-primary" onclick="submitOrder()">📧 ثبت سفارش</button>
-      <button class="btn btn-secondary" onclick="clearCart()">🗑 خالی کردن سبد</button>
+
+      <button
+        class="btn btn-primary"
+        onclick="submitOrder()">
+        📧 ثبت سفارش
+      </button>
+
+      <button
+        class="btn btn-secondary"
+        onclick="clearCart()">
+        🗑 خالی کردن سبد
+      </button>
+
     </div>
 
   </div>
+
 </aside>
 
-<div class="toast" id="toast"></div>
 
-<button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<div
+  class="toast"
+  id="toast">
+</div>
+
+
+<button
+  class="back-top"
+  id="backTop"
+  onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  ↑
+</button>
+
 
 <script>
-const tracks = [
-  {id:"yaghut",title:"یاقوت",file:"yaghut.mp3",year:"۱۴۰۵",cover:"black-lucifer-1.jpg",medium:"audio/medium/yaghut-48k.mp3",low:"audio/low/yaghut-32k.mp3"},
-  {id:"negin",title:"نگین",file:"negin.mp3",year:"۱۴۰۵",cover:"black-lucifer-1.jpg",medium:"audio/medium/negin-48k.mp3",low:"audio/low/negin-32k.mp3"},
-  {id:"name-baroon",title:"نام بارون",file:"name-baroon.mp3",year:"۱۴۰۵",cover:"black-lucifer-1.jpg",medium:"audio/medium/name-baroon-48k.mp3",low:"audio/low/name-baroon-32k.mp3"},
-  {id:"shabhaye-masti",title:"شب‌های مستی",file:"shabhaye-masti.mp3",year:"۱۴۰۵",cover:"black-lucifer-1.jpg",medium:"audio/medium/shabhaye-masti-48k.mp3",low:"audio/low/shabhaye-masti-32k.mp3"},
-  {id:"shamim",title:"شمیم",file:"shamim.mp3",year:"۱۴۰۵",cover:"black-lucifer-1.jpg",medium:"audio/medium/shamim-48k.mp3",low:"audio/low/shamim-32k.mp3"},
-  {id:"choubeye-daar",title:"چوب دار",file:"choubeye-daar.mp3",year:"۱۴۰۵",cover:"black-lucifer-2.jpg",medium:"audio/medium/choubeye-daar-48k.mp3",low:"audio/low/choubeye-daar-32k.mp3"},
-  {id:"yegane",title:"یگانه",file:"yegane.mp3",year:"۱۴۰۵",cover:"black-lucifer-2.jpg",medium:"audio/medium/yegane-48k.mp3",low:"audio/low/yegane-32k.mp3"},
-  {id:"atmad",title:"اعتماد",file:"atmad.mp3",year:"۱۴۰۵",cover:"black-lucifer-2.jpg",medium:"audio/medium/atmad-48k.mp3",low:"audio/low/atmad-32k.mp3"},
-  {id:"btafavot",title:"با تفاوت",file:"btafavot.mp3",year:"۱۴۰۵",cover:"black-lucifer-2.jpg",medium:"audio/medium/btafavot-48k.mp3",low:"audio/low/btafavot-32k.mp3"},
-  {id:"divar",title:"دیوار",file:"divar.mp3",year:"۱۴۰۵",cover:"black-lucifer-2.jpg",medium:"audio/medium/divar-48k.mp3",low:"audio/low/divar-32k.mp3"}
-];
 
-const books = [
-  {id:"book-1",code:"BOOK-001",title:"مرگ بی‌انتهای ۱",image:"book-1.jpg",price:500000},
-  {id:"book-2",code:"BOOK-002",title:"مرگ بی‌انتهای ۲",image:"book-2.png",price:200000},
-  {id:"book-3",code:"BOOK-003",title:"گلای سرخ و نارنجی پرپر",image:"book-3.jpg",price:600000},
-  {id:"book-4",code:"BOOK-004",title:"دیوار تنهایی",image:"book-4-back.jpg",price:200000},
-  {id:"book-5",code:"BOOK-005",title:"ساعت سیزدهم",image:"book-5-saat-sezdahom.jpg",price:700000,pdf:"books-pdf/saat-sezdahom.pdf#toolbar=0&navpanes=0"},
-  {id:"book-6",code:"BOOK-006",title:"رئیس جمهور ترامپ وحشی",image:"book-6-trump.jpg",price:333000,pdf:"books-pdf/trump-wild.pdf#toolbar=0&navpanes=0"}
-];
+/* =========================
+   موسیقی
+========================= */
 
-const games = [
-  {id:"game-1",code:"APP-001",title:"Asylum of Shadows 1-2",file:"games/asylum-of-shadows-1-2.apk",price:300000},
-  {id:"game-2",code:"APP-002",title:"Abfamazvar 2027 Pro 1405",file:"games/abfamazvar2027-pro-1405.apk",price:300000},
-  {id:"game-3",code:"APP-003",title:"Donald Trump Presidential Missions 1406",file:"games/donald-trump-presidential-missions-1406.apk",price:300000},
-  {id:"game-4",code:"APP-004",title:"Persian Contact Pro 2",file:"games/persian-contact-pro-2.apk",price:300000},
-  {id:"game-5",code:"APP-005",title:"Pro 1405 1.1",file:"games/pro-1405-1-1.apk",price:300000},
-  {id:"game-6",code:"APP-006",title:"Rainy City Adventure 1406-2027",file:"games/rainy-city-adventure-1406-2027.apk",price:300000},
-  {id:"game-7",code:"APP-007",title:"Soccer Champion D3 1406",file:"games/soccer-champion-d3-1406.apk",price:300000},
-  {id:"game-8",code:"APP-008",title:"Smart Watch 1405",file:"games/smart-watch-1405.apk",price:300000}
-];
+const backgroundMusic =
+  document.getElementById("backgroundMusic");
 
-const storeProducts = [
-  {id:"album-black-lucifer-1",code:"ALB-001",title:"آلبوم لوسیفر سیاه",type:"آلبوم",price:null},
-  {id:"album-black-lucifer-2",code:"ALB-002",title:"لوسیفر سیاه ۲",type:"آلبوم",price:null},
-  {id:"my-dear-father",code:"MUS-011",title:"My Dear Father",type:"موسیقی",price:null},
-  ...books.map(book=>({id:book.id,code:book.code,title:book.title,type:"کتاب",price:book.price})),
-  ...games.map(game=>({id:game.id,code:game.code,title:game.title,type:"بازی / برنامه",price:game.price}))
-];
+const bgMusicToggle =
+  document.getElementById("bgMusicToggle");
 
-function formatPrice(value){
-  if(value===null || value===undefined) return "استعلام قیمت";
-  return Number(value).toLocaleString("fa-IR")+" تومان";
-}
+const bgMusicMute =
+  document.getElementById("bgMusicMute");
 
-function showToast(message){
-  const toast=document.getElementById("toast");
-  toast.textContent=message;
-  toast.classList.add("show");
-  clearTimeout(window.toastTimer);
-  window.toastTimer=setTimeout(()=>toast.classList.remove("show"),3000);
-}
 
-function toggleMenu(){
-  document.getElementById("navLinks").classList.toggle("open");
-}
+let backgroundWasPlaying = false;
 
-document.querySelectorAll(".nav-links a").forEach(link=>{
-  link.addEventListener("click",()=>document.getElementById("navLinks").classList.remove("open"));
-});
 
-function toggleTheme(){
-  document.body.classList.toggle("dark");
-  const isDark=document.body.classList.contains("dark");
-  localStorage.setItem("mohammadRezaKarimiTheme",isDark?"dark":"light");
-  document.getElementById("themeButton").textContent=isDark?"☀️":"🌙";
-}
+let backgroundMusicEnabled =
+  localStorage.getItem(
+    "mohammadRezaKarimiBgMusicEnabled"
+  ) !== "false";
 
-(function(){
-  const saved=localStorage.getItem("mohammadRezaKarimiTheme");
-  if(saved==="dark"){
-    document.body.classList.add("dark");
-    document.getElementById("themeButton").textContent="☀️";
-  }
-})();
 
-function renderTracks(){
-  const list=document.getElementById("musicList");
+let backgroundMusicMuted =
+  localStorage.getItem(
+    "mohammadRezaKarimiBgMusicMuted"
+  ) === "true";
 
-  list.innerHTML=tracks.map((track,index)=>`
-    <article class="music-card">
-      <div class="track-number">${index+1}</div>
-
-      <div class="music-cover">
-        <img src="${track.cover}" alt="کاور ${track.title}">
-      </div>
-
-      <div class="track-info">
-        <h3>${track.title}</h3>
-        <small>${track.year} • کیفیت‌های مختلف موجود است</small>
-        <select class="quality-select" onchange="changeTrackQuality('${track.id}',this.value)">
-          <option value="${track.file}">کیفیت اصلی</option>
-          <option value="${track.medium}">کیفیت متوسط 48K</option>
-          <option value="${track.low}">کیفیت کم 32K</option>
-        </select>
-      </div>
-
-      <audio
-        id="audio-${track.id}"
-        class="track-audio"
-        controls
-        preload="metadata"
-        src="${track.file}">
-      </audio>
-    </article>
-  `).join("");
-
-  setupMainAudioListeners();
-}
-
-function changeTrackQuality(trackId,newSrc){
-  const audio=document.getElementById("audio-"+trackId) || document.getElementById("audio-my-dear-father");
-  if(!audio || !newSrc) return;
-  const wasPlaying=!audio.paused;
-  const currentTime=audio.currentTime;
-  audio.src=newSrc;
-  audio.load();
-  audio.currentTime=currentTime||0;
-  if(wasPlaying) audio.play().catch(()=>{});
-}
-
-function renderMusicArchive(filter=""){
-  const list=document.getElementById("musicArchiveList");
-  const query=filter.trim().toLowerCase();
-
-  const results=tracks.filter(track=>track.title.toLowerCase().includes(query));
-
-  if(!results.length){
-    list.innerHTML='<div class="section-box" style="grid-column:1/-1;text-align:center">موردی پیدا نشد.</div>';
-    return;
-  }
-
-  list.innerHTML=results.map((track,index)=>`
-    <a class="archive-item" href="#music">
-      <strong>${(index+1).toLocaleString("fa-IR")}</strong>
-      <div>
-        <b>${track.title}</b>
-        <small><br>سال ${track.year}</small>
-      </div>
-    </a>
-  `).join("");
-}
-
-function filterMusicArchive(){
-  renderMusicArchive(document.getElementById("musicSearch").value);
-}
-
-function renderBooks(){
-  const list=document.getElementById("bookList");
-
-  list.innerHTML=books.map(book=>`
-    <article class="book-card">
-      <div class="book-cover">
-        <img src="${book.image}" alt="${book.title}">
-      </div>
-
-      <div class="book-body">
-        <h3>${book.title}</h3>
-
-        <div class="store-code">${book.code}</div>
-
-        <div class="price">${formatPrice(book.price)}</div>
-
-        <div class="card-actions">
-          <button class="btn btn-primary btn-small" onclick="addToCart('${book.id}')">
-            🛒 افزودن به سبد
-          </button>
-
-          ${book.pdf?`
-            <a class="btn btn-secondary btn-small" href="${book.pdf}" target="_blank" rel="noopener">
-              📖 مشاهده PDF
-            </a>
-          `:""}
-        </div>
-      </div>
-    </article>
-  `).join("");
-}
-
-function renderBookArchive(){
-  const list=document.getElementById("bookArchiveList");
-
-  list.innerHTML=books.map((book,index)=>`
-    <a class="archive-item" href="#books">
-      <strong>${(index+1).toLocaleString("fa-IR")}</strong>
-
-      <div>
-        <b>${book.title}</b>
-        <small><br>${book.code} • ${formatPrice(book.price)}</small>
-      </div>
-    </a>
-  `).join("");
-}
-
-function renderGames(){
-  const list=document.getElementById("gameList");
-
-  list.innerHTML=games.map(game=>`
-    <article class="game-card">
-      <div class="game-cover">
-        🎮<br>
-        ${game.title}
-      </div>
-
-      <div class="game-body">
-        <h3>${game.title}</h3>
-
-        <div class="store-code">${game.code}</div>
-
-        <p>فایل APK • مناسب دستگاه‌های سازگار با Android</p>
-
-        <div class="price">${formatPrice(game.price)}</div>
-
-        <button class="btn btn-primary btn-small" onclick="addToCart('${game.id}')">
-          🛒 افزودن به سبد
-        </button>
-      </div>
-    </article>
-  `).join("");
-}
-
-function renderStore(){
-  const list=document.getElementById("storeList");
-
-  list.innerHTML=storeProducts.map(product=>`
-    <article class="store-card">
-
-      <div class="store-type">${product.type}</div>
-
-      <div class="store-code">کد: ${product.code}</div>
-
-      <h3>${product.title}</h3>
-
-      <p>
-        برای ثبت سفارش، کد <strong>${product.code}</strong> را نیز در سفارش خود خواهید داشت.
-      </p>
-
-      <div class="price">${formatPrice(product.price)}</div>
-
-      <button class="btn btn-primary btn-small" onclick="addToCart('${product.id}')">
-        🛒 افزودن به سبد
-      </button>
-
-    </article>
-  `).join("");
-}
-
-let cart=JSON.parse(localStorage.getItem("mohammadRezaKarimiCart")||"[]");
-
-function saveCart(){
-  localStorage.setItem("mohammadRezaKarimiCart",JSON.stringify(cart));
-}
-
-function getProductById(id){
-  return storeProducts.find(product=>product.id===id);
-}
-
-function addToCart(id){
-  const product=getProductById(id);
-  if(!product) return;
-
-  const existing=cart.find(item=>item.id===id);
-
-  if(existing){
-    existing.qty++;
-  }else{
-    cart.push({
-      id:product.id,
-      code:product.code,
-      title:product.title,
-      price:product.price,
-      qty:1
-    });
-  }
-
-  saveCart();
-  renderCart();
-  showToast("محصول به سبد خرید اضافه شد.");
-}
-
-function removeFromCart(id){
-  const item=cart.find(item=>item.id===id);
-  if(!item) return;
-
-  item.qty--;
-
-  if(item.qty<=0){
-    cart=cart.filter(product=>product.id!==id);
-  }
-
-  saveCart();
-  renderCart();
-}
-
-function deleteFromCart(id){
-  cart=cart.filter(item=>item.id!==id);
-  saveCart();
-  renderCart();
-}
-
-function clearCart(){
-  if(!cart.length){
-    showToast("سبد خرید خالی است.");
-    return;
-  }
-
-  if(!confirm("آیا از خالی کردن سبد خرید مطمئن هستید؟")) return;
-
-  cart=[];
-  saveCart();
-  renderCart();
-  showToast("سبد خرید خالی شد.");
-}
-
-function renderCart(){
-  const items=document.getElementById("cartItems");
-  const count=document.getElementById("cartCount");
-  const totalElement=document.getElementById("cartTotal");
-
-  const totalCount=cart.reduce((sum,item)=>sum+item.qty,0);
-  count.textContent=totalCount.toLocaleString("fa-IR");
-
-  if(!cart.length){
-    items.innerHTML=`
-      <div class="cart-empty">
-        🛒<br><br>
-        سبد خرید شما خالی است.
-      </div>
-    `;
-    totalElement.textContent="۰ تومان";
-    return;
-  }
-
-  items.innerHTML=cart.map(item=>{
-    const itemTotal=item.price===null?null:item.price*item.qty;
-
-    return `
-      <div class="cart-item">
-
-        <div class="cart-item-top">
-          <div>
-            <h4>${item.title}</h4>
-            <small>${item.price===null?"استعلام قیمت":formatPrice(item.price)}</small>
-            <div class="cart-code">کد محصول: ${item.code}</div>
-          </div>
-
-          <button class="quantity-btn" onclick="deleteFromCart('${item.id}')">×</button>
-        </div>
-
-        <div class="cart-item-actions">
-          <button class="quantity-btn" onclick="removeFromCart('${item.id}')">−</button>
-
-          <strong>${item.qty.toLocaleString("fa-IR")}</strong>
-
-          <button class="quantity-btn" onclick="addToCart('${item.id}')">+</button>
-
-          <span style="margin-right:auto;font-weight:900">
-            ${itemTotal===null?"استعلام":formatPrice(itemTotal)}
-          </span>
-        </div>
-
-      </div>
-    `;
-  }).join("");
-
-  const knownTotal=cart.reduce((sum,item)=>item.price===null?sum:sum+(item.price*item.qty),0);
-  const hasUnknown=cart.some(item=>item.price===null);
-
-  totalElement.textContent=formatPrice(knownTotal)+(hasUnknown?" + استعلام":"");
-}
-
-function toggleCart(){
-  document.getElementById("cartPanel").classList.toggle("open");
-  document.getElementById("overlay").classList.toggle("show");
-}
-
-function closeCart(){
-  document.getElementById("cartPanel").classList.remove("open");
-  document.getElementById("overlay").classList.remove("show");
-}
-
-function submitOrder(){
-  if(!cart.length){
-    showToast("سبد خرید خالی است.");
-    return;
-  }
-
-  let body="سلام، برای ثبت سفارش از سایت محمدرضا کریمی پیام می‌دهم.\n\n";
-  body+="محصولات سفارش:\n";
-
-  cart.forEach((item,index)=>{
-    body+=`${index+1}. ${item.title}\n`;
-    body+=`کد محصول: ${item.code}\n`;
-    body+=`تعداد: ${item.qty}\n`;
-
-    if(item.price===null){
-      body+="قیمت: استعلام\n";
-    }else{
-      body+=`قیمت واحد: ${formatPrice(item.price)}\n`;
-      body+=`جمع: ${formatPrice(item.price*item.qty)}\n`;
-    }
-
-    body+="\n";
-  });
-
-  const total=cart.reduce((sum,item)=>item.price===null?sum:sum+(item.price*item.qty),0);
-  const hasUnknown=cart.some(item=>item.price===null);
-
-  body+="مجموع تقریبی: "+formatPrice(total);
-
-  if(hasUnknown){
-    body+=" + موارد نیازمند استعلام";
-  }
-
-  body+="\n\nلطفاً سفارش را بررسی و جهت هماهنگی پرداخت و تحویل با من تماس بگیرید.";
-
-  const subject="سفارش جدید فروشگاه سایت محمدرضا کریمی";
-
-  window.location.href=
-    "mailto:rezakarimi11228@gmail.com"+
-    "?subject="+encodeURIComponent(subject)+
-    "&body="+encodeURIComponent(body);
-}
-
-function sendAdvertisingRequest(event){
-  event.preventDefault();
-
-  const name=document.getElementById("adName").value.trim();
-  const email=document.getElementById("adEmail").value.trim();
-  const type=document.getElementById("adType").value;
-  const work=document.getElementById("adWork").value.trim();
-  const message=document.getElementById("adMessage").value.trim();
-
-  const subject="درخواست تبلیغات سایت محمدرضا کریمی";
-
-  const body=
-`نام: ${name}
-
-ایمیل: ${email}
-
-نوع تبلیغ: ${type}
-
-نام اثر / برند: ${work}
-
-توضیحات:
-${message}
-`;
-
-  window.location.href=
-    "mailto:rezakarimi11228@gmail.com"+
-    "?subject="+encodeURIComponent(subject)+
-    "&body="+encodeURIComponent(body);
-}
-
-const persianMonths=[
-  "فروردین","اردیبهشت","خرداد","تیر","مرداد","شهریور",
-  "مهر","آبان","آذر","دی","بهمن","اسفند"
-];
-
-const persianWeekdays=[
-  "شنبه","یکشنبه","دوشنبه","سه‌شنبه","چهارشنبه","پنجشنبه","جمعه"
-];
-
-let selectedCalendarYear=1405;
-
-function gregorianDateToPersian(date){
-  const formatter=new Intl.DateTimeFormat("en-US-u-ca-persian",{year:"numeric",month:"numeric",day:"numeric"});
-  const parts=formatter.formatToParts(date);
-  const result={};
-
-  parts.forEach(part=>{
-    if(part.type==="year"||part.type==="month"||part.type==="day"){
-      result[part.type]=Number(part.value);
-    }
-  });
-
-  return result;
-}
-
-function persianToGregorian(year,month,day){
-  let low=Date.UTC(year+621,0,1);
-  let high=Date.UTC(year+622,11,31);
-  const target=year*10000+month*100+day;
-
-  while(low<=high){
-    const mid=low+Math.floor((high-low)/2);
-    const date=new Date(mid);
-    const p=gregorianDateToPersian(date);
-    const value=p.year*10000+p.month*100+p.day;
-
-    if(value===target) return date;
-
-    if(value<target){
-      low=mid+86400000;
-    }else{
-      high=mid-86400000;
-    }
-  }
-
-  return new Date(Date.UTC(year+621,month-1,day));
-}
-
-function daysInPersianMonth(year,month){
-  if(month<=6) return 31;
-  if(month<=11) return 30;
-
-  const lastDay29=persianToGregorian(year,12,29);
-  const lastDay30=persianToGregorian(year,12,30);
-
-  const p29=gregorianDateToPersian(lastDay29);
-  const p30=gregorianDateToPersian(lastDay30);
-
-  return p30.year===year && p30.month===12 && p30.day===30 ? 30 :
-         p29.year===year && p29.month===12 && p29.day===29 ? 29 : 30;
-}
-
-function getPersianMonthStartWeekday(year,month){
-  const date=persianToGregorian(year,month,1);
-  return (date.getUTCDay()+1)%7;
-}
-
-function renderCalendarYears(){
-  const select=document.getElementById("calendarYear");
-  select.innerHTML="";
-
-  for(let year=1405;year<=1415;year++){
-    const option=document.createElement("option");
-    option.value=year;
-    option.textContent=year.toLocaleString("fa-IR");
-    if(year===selectedCalendarYear) option.selected=true;
-    select.appendChild(option);
-  }
-}
-
-function renderCalendar(){
-  const select=document.getElementById("calendarYear");
-  selectedCalendarYear=Number(select.value);
-
-  const container=document.getElementById("calendarGrid");
-  const title=document.getElementById("calendarTitle");
-
-  title.innerHTML=`<h3>تقویم سال ${selectedCalendarYear.toLocaleString("fa-IR")}</h3>`;
-  container.innerHTML="";
-
-  for(let month=1;month<=12;month++){
-
-    const monthBox=document.createElement("div");
-    monthBox.className="calendar-month";
-
-    monthBox.innerHTML=`<h3>${persianMonths[month-1]}</h3>`;
-
-    const monthGrid=document.createElement("div");
-    monthGrid.className="calendar-grid";
-
-    persianWeekdays.forEach(day=>{
-      const cell=document.createElement("div");
-      cell.className="calendar-day head";
-      cell.textContent=day;
-      monthGrid.appendChild(cell);
-    });
-
-    const monthStart=getPersianMonthStartWeekday(selectedCalendarYear,month);
-
-    for(let i=0;i<monthStart;i++){
-      const empty=document.createElement("div");
-      empty.className="calendar-day";
-      empty.style.opacity=".25";
-      monthGrid.appendChild(empty);
-    }
-
-    const days=daysInPersianMonth(selectedCalendarYear,month);
-
-    for(let day=1;day<=days;day++){
-      const cell=document.createElement("div");
-      cell.className="calendar-day";
-
-      const gregorian=persianToGregorian(selectedCalendarYear,month,day);
-      const today=gregorianDateToPersian(new Date());
-
-      if(
-        today.year===selectedCalendarYear &&
-        today.month===month &&
-        today.day===day
-      ){
-        cell.classList.add("today");
-      }
-
-      cell.innerHTML=`
-        <strong>${day.toLocaleString("fa-IR")}</strong>
-        <small>${gregorian.toLocaleDateString("fa-IR")}</small>
-      `;
-
-      monthGrid.appendChild(cell);
-    }
-
-    monthBox.appendChild(monthGrid);
-    container.appendChild(monthBox);
-  }
-}
-
-function changeCalendarYear(amount){
-  selectedCalendarYear+=amount;
-
-  if(selectedCalendarYear<1405) selectedCalendarYear=1405;
-  if(selectedCalendarYear>1415) selectedCalendarYear=1415;
-
-  document.getElementById("calendarYear").value=selectedCalendarYear;
-  renderCalendar();
-}
-
-function updateDigitalClock(){
-  const now=new Date();
-
-  const hh=String(now.getHours()).padStart(2,"0");
-  const mm=String(now.getMinutes()).padStart(2,"0");
-  const ss=String(now.getSeconds()).padStart(2,"0");
-
-  document.getElementById("digitalClock").textContent=`${hh}:${mm}`;
-  document.getElementById("digitalClockSeconds").textContent=ss;
-
-  const p=gregorianDateToPersian(now);
-
-  document.getElementById("digitalPersianDate").textContent=
-    `${p.year.toLocaleString("fa-IR")}/${String(p.month).padStart(2,"0")}/${String(p.day).padStart(2,"0")}`;
-
-  document.getElementById("digitalGregorianDate").textContent=
-    now.toLocaleDateString("fa-IR");
-
-  document.getElementById("digitalWeekday").textContent=
-    new Intl.DateTimeFormat("fa-IR",{weekday:"long"}).format(now);
-}
-
-function getSiteAnswer(question){
-  const q=question.toLowerCase().trim();
-
-  if(
-    q.includes("کتاب") &&
-    (q.includes("ساعت")||q.includes("سیزدهم"))
-  ){
-    return "کتاب «ساعت سیزدهم» با کد BOOK-005 و قیمت ۷۰۰,۰۰۰ تومان در فروشگاه قرار دارد و PDF آن نیز در سایت موجود است.";
-  }
-
-  if(q.includes("ترامپ") || q.includes("رئیس جمهور ترامپ")){
-    return "کتاب «رئیس جمهور ترامپ وحشی» با کد BOOK-006 و قیمت ۳۳۳,۰۰۰ تومان در فروشگاه قرار دارد.";
-  }
-
-  if(q.includes("مرگ بی") && q.includes("۱")){
-    return "کتاب «مرگ بی‌انتهای ۱» با کد BOOK-001 و قیمت ۵۰۰,۰۰۰ تومان در فروشگاه قرار دارد.";
-  }
-
-  if(q.includes("مرگ بی") && q.includes("۲")){
-    return "کتاب «مرگ بی‌انتهای ۲» با کد BOOK-002 و قیمت ۲۰۰,۰۰۰ تومان در فروشگاه قرار دارد.";
-  }
-
-  if(q.includes("گلای سرخ")){
-    return "کتاب «گلای سرخ و نارنجی پرپر» با کد BOOK-003 و قیمت ۶۰۰,۰۰۰ تومان در فروشگاه قرار دارد.";
-  }
-
-  if(q.includes("دیوار تنهایی")){
-    return "کتاب «دیوار تنهایی» با کد BOOK-004 و قیمت ۲۰۰,۰۰۰ تومان در فروشگاه قرار دارد.";
-  }
-
-  if(q.includes("یاقوت")){
-    return "قطعه «یاقوت» در بخش موسیقی سایت قرار دارد و کیفیت اصلی، 48K و 32K برای آن قابل انتخاب است.";
-  }
-
-  if(q.includes("نگین")){
-    return "قطعه «نگین» در بخش موسیقی سایت موجود است.";
-  }
-
-  if(q.includes("my dear father")){
-    return "قطعه «My Dear Father» با کد MUS-011 و سال ۱۴۰۵ / ۲۰۲۶ در سایت موجود است.";
-  }
-
-  if(q.includes("لوسیفر سیاه") || q.includes("آلبوم")){
-    return "دو آلبوم «لوسیفر سیاه» و «لوسیفر سیاه ۲» در بخش آلبوم‌ها قرار دارند. کد آن‌ها ALB-001 و ALB-002 است.";
-  }
-
-  if(q.includes("بازی") || q.includes("برنامه") || q.includes("apk")){
-    return "در فروشگاه ۸ بازی و برنامه قرار دارد و قیمت هرکدام ۳۰۰,۰۰۰ تومان است. کدهای آن‌ها از APP-001 تا APP-008 هستند.";
-  }
-
-  if(q.includes("فروشگاه") || q.includes("خرید") || q.includes("سفارش")){
-    return "در فروشگاه ۱۷ محصول وجود دارد و هر محصول کد اختصاصی دارد. پس از افزودن محصولات به سبد، با دکمه «ثبت سفارش» ایمیل سفارش آماده می‌شود.";
-  }
-
-  if(q.includes("ایمیل") || q.includes("تماس")){
-    return "ایمیل رسمی سایت: rezakarimi11228@gmail.com";
-  }
-
-  if(q.includes("تلگرام")){
-    return "راه ارتباطی تلگرام: https://t.me/Abfamozvar1406app";
-  }
-
-  if(q.includes("یوتیوب")){
-    return "کانال یوتیوب: https://youtube.com/@raperstore1405?si=3pqDAnfc6gwahOTO";
-  }
-
-  if(q.includes("تبلیغ")){
-    return "برای تبلیغات به بخش «تبلیغات» بروید. فرم درخواست تبلیغات نیز در همان بخش قرار دارد.";
-  }
-
-  if(q.includes("تقویم")){
-    return "تقویم شمسی دیجیتال در بخش «تقویم» قرار گرفته و سال‌های ۱۴۰۵ تا ۱۴۱۵ را نمایش می‌دهد.";
-  }
-
-  if(q.includes("ساعت")){
-    return "ساعت دیجیتال زنده و تاریخ شمسی و میلادی در بخش «ساعت دیجیتال» قرار دارد.";
-  }
-
-  return "در مورد این سؤال اطلاعات اختصاصی در پایگاه اطلاعات محلی سایت پیدا نکردم. برای پاسخ عمومی و کامل به این سؤال می‌توانید از ChatGPT استفاده کنید.";
-}
-
-function sendAiQuestion(event){
-  event.preventDefault();
-
-  const input=document.getElementById("aiInput");
-  const box=document.getElementById("aiMessages");
-  const question=input.value.trim();
-
-  if(!question) return;
-
-  const user=document.createElement("div");
-  user.className="ai-message user";
-  user.textContent=question;
-  box.appendChild(user);
-
-  input.value="";
-
-  const answer=document.createElement("div");
-  answer.className="ai-message bot";
-  answer.textContent=getSiteAnswer(question);
-  box.appendChild(answer);
-
-  box.scrollTop=box.scrollHeight;
-}
-
-const backgroundMusic=document.getElementById("backgroundMusic");
-const bgMusicToggle=document.getElementById("bgMusicToggle");
-const bgMusicMute=document.getElementById("bgMusicMute");
-
-let backgroundWasPlaying=false;
-
-let backgroundMusicEnabled=
-  localStorage.getItem("mohammadRezaKarimiBgMusicEnabled")!=="false";
-
-let backgroundMusicMuted=
-  localStorage.getItem("mohammadRezaKarimiBgMusicMuted")==="true";
 
 function updateBackgroundMusicUI(){
-  bgMusicToggle.textContent=backgroundMusic.paused?"▶":"⏸";
-  bgMusicToggle.classList.toggle("active",!backgroundMusic.paused);
 
-  bgMusicMute.textContent=backgroundMusicMuted?"🔇":"🔊";
-  bgMusicMute.classList.toggle("active",backgroundMusicMuted);
+  bgMusicToggle.textContent =
+    backgroundMusic.paused ? "▶" : "⏸";
+
+  bgMusicToggle.classList.toggle(
+    "active",
+    !backgroundMusic.paused
+  );
+
+
+  bgMusicMute.textContent =
+    backgroundMusicMuted ? "🔇" : "🔊";
+
+  bgMusicMute.classList.toggle(
+    "active",
+    backgroundMusicMuted
+  );
 }
 
+
 function startBackgroundMusic(){
-  if(!backgroundMusicEnabled) return;
 
-  backgroundMusic.muted=backgroundMusicMuted;
+  if(!backgroundMusicEnabled){
+    return;
+  }
 
-  backgroundMusic.play()
+  backgroundMusic.muted =
+    backgroundMusicMuted;
+
+
+  backgroundMusic
+    .play()
     .then(updateBackgroundMusicUI)
     .catch(updateBackgroundMusicUI);
 }
 
+
 function pauseBackgroundMusic(){
+
   backgroundMusic.pause();
+
   updateBackgroundMusicUI();
 }
 
+
 function toggleBackgroundMusic(){
+
   if(backgroundMusic.paused){
 
-    backgroundMusicEnabled=true;
+    backgroundMusicEnabled = true;
 
     localStorage.setItem(
       "mohammadRezaKarimiBgMusicEnabled",
@@ -3941,7 +3854,7 @@ function toggleBackgroundMusic(){
 
   }else{
 
-    backgroundMusicEnabled=false;
+    backgroundMusicEnabled = false;
 
     localStorage.setItem(
       "mohammadRezaKarimiBgMusicEnabled",
@@ -3949,142 +3862,362 @@ function toggleBackgroundMusic(){
     );
 
     pauseBackgroundMusic();
+
   }
 }
 
-function toggleBackgroundMute(){
-  backgroundMusicMuted=!backgroundMusicMuted;
 
-  backgroundMusic.muted=backgroundMusicMuted;
+function toggleBackgroundMute(){
+
+  backgroundMusicMuted =
+    !backgroundMusicMuted;
+
+  backgroundMusic.muted =
+    backgroundMusicMuted;
+
 
   localStorage.setItem(
     "mohammadRezaKarimiBgMusicMuted",
-    backgroundMusicMuted?"true":"false"
+    backgroundMusicMuted
+      ? "true"
+      : "false"
   );
+
 
   updateBackgroundMusicUI();
 }
 
+
+/* =========================
+   کنترل آهنگ‌های اصلی
+========================= */
+
 function setupMainAudioListeners(){
-  const mainAudios=document.querySelectorAll("audio.track-audio");
 
-  mainAudios.forEach(audio=>{
+  const mainAudios =
+    document.querySelectorAll(
+      "audio.track-audio"
+    );
 
-    audio.addEventListener("play",()=>{
-      backgroundWasPlaying=!backgroundMusic.paused;
 
-      pauseBackgroundMusic();
+  mainAudios.forEach(audio => {
 
-      mainAudios.forEach(other=>{
-        if(other!==audio) other.pause();
-      });
-    });
+    audio.addEventListener(
+      "play",
+      () => {
 
-    audio.addEventListener("pause",()=>{
-      const anotherPlaying=Array.from(mainAudios).some(
-        other=>other!==audio && !other.paused
-      );
+        backgroundWasPlaying =
+          !backgroundMusic.paused;
 
-      if(!anotherPlaying && backgroundWasPlaying){
-        startBackgroundMusic();
-        backgroundWasPlaying=false;
+
+        pauseBackgroundMusic();
+
+
+        mainAudios.forEach(other => {
+
+          if(other !== audio){
+            other.pause();
+          }
+
+        });
+
       }
-    });
+    );
 
-    audio.addEventListener("ended",()=>{
-      const anotherPlaying=Array.from(mainAudios).some(
-        other=>other!==audio && !other.paused
-      );
 
-      if(!anotherPlaying && backgroundWasPlaying){
-        startBackgroundMusic();
-        backgroundWasPlaying=false;
+    audio.addEventListener(
+      "pause",
+      () => {
+
+        const anotherPlaying =
+          Array.from(mainAudios)
+            .some(
+              other =>
+                other !== audio &&
+                !other.paused
+            );
+
+
+        if(
+          !anotherPlaying &&
+          backgroundWasPlaying
+        ){
+
+          startBackgroundMusic();
+
+          backgroundWasPlaying = false;
+
+        }
+
       }
-    });
+    );
+
+
+    audio.addEventListener(
+      "ended",
+      () => {
+
+        const anotherPlaying =
+          Array.from(mainAudios)
+            .some(
+              other =>
+                other !== audio &&
+                !other.paused
+            );
+
+
+        if(
+          !anotherPlaying &&
+          backgroundWasPlaying
+        ){
+
+          startBackgroundMusic();
+
+          backgroundWasPlaying = false;
+
+        }
+
+      }
+    );
+
   });
+
 }
 
-document.querySelectorAll(".gallery-item img").forEach(image=>{
-  image.addEventListener("click",()=>{
-    const overlay=document.createElement("div");
 
-    overlay.style.position="fixed";
-    overlay.style.inset="0";
-    overlay.style.zIndex="2000";
-    overlay.style.background="rgba(0,0,0,.9)";
-    overlay.style.display="grid";
-    overlay.style.placeItems="center";
-    overlay.style.padding="20px";
+/* =========================
+   بزرگ‌نمایی گالری
+========================= */
 
-    const big=document.createElement("img");
+document
+  .querySelectorAll(".gallery-item img")
+  .forEach(image => {
 
-    big.src=image.src;
-    big.alt=image.alt;
-    big.style.maxWidth="95vw";
-    big.style.maxHeight="90vh";
-    big.style.objectFit="contain";
-    big.style.borderRadius="18px";
+    image.addEventListener(
+      "click",
+      () => {
 
-    overlay.appendChild(big);
+        const overlay =
+          document.createElement("div");
 
-    overlay.addEventListener("click",()=>overlay.remove());
 
-    document.body.appendChild(overlay);
+        overlay.style.position =
+          "fixed";
+
+        overlay.style.inset =
+          "0";
+
+        overlay.style.zIndex =
+          "2000";
+
+        overlay.style.background =
+          "rgba(0,0,0,.9)";
+
+        overlay.style.display =
+          "grid";
+
+        overlay.style.placeItems =
+          "center";
+
+        overlay.style.padding =
+          "20px";
+
+
+        const big =
+          document.createElement("img");
+
+
+        big.src =
+          image.src;
+
+        big.alt =
+          image.alt;
+
+        big.style.maxWidth =
+          "95vw";
+
+        big.style.maxHeight =
+          "90vh";
+
+        big.style.objectFit =
+          "contain";
+
+        big.style.borderRadius =
+          "18px";
+
+
+        overlay.appendChild(big);
+
+
+        overlay.addEventListener(
+          "click",
+          () => overlay.remove()
+        );
+
+
+        document.body.appendChild(
+          overlay
+        );
+
+      }
+    );
+
   });
-});
 
-let firstInteractionDone=false;
+
+/* =========================
+   شروع موسیقی بعد از اولین تعامل
+========================= */
+
+let firstInteractionDone =
+  false;
+
 
 function handleFirstInteraction(){
-  if(firstInteractionDone) return;
 
-  firstInteractionDone=true;
-
-  if(backgroundMusicEnabled && backgroundMusic.paused){
-    startBackgroundMusic();
+  if(firstInteractionDone){
+    return;
   }
+
+
+  firstInteractionDone = true;
+
+
+  if(
+    backgroundMusicEnabled &&
+    backgroundMusic.paused
+  ){
+
+    startBackgroundMusic();
+
+  }
+
 }
 
-["pointerdown","click","touchstart","keydown"].forEach(eventName=>{
+
+[
+  "pointerdown",
+  "click",
+  "touchstart",
+  "keydown"
+].forEach(eventName => {
+
   document.addEventListener(
     eventName,
     handleFirstInteraction,
-    {once:false,passive:true}
+    {
+      once:false,
+      passive:true
+    }
   );
+
 });
 
-window.addEventListener("scroll",()=>{
-  const button=document.getElementById("backTop");
 
-  if(window.scrollY>500){
-    button.classList.add("show");
-  }else{
-    button.classList.remove("show");
+/* =========================
+   دکمه بازگشت به بالا
+========================= */
+
+window.addEventListener(
+  "scroll",
+  () => {
+
+    const button =
+      document.getElementById(
+        "backTop"
+      );
+
+
+    if(window.scrollY > 500){
+
+      button.classList.add(
+        "show"
+      );
+
+    }else{
+
+      button.classList.remove(
+        "show"
+      );
+
+    }
+
   }
-});
+);
+
+
+/* =========================
+   راه‌اندازی سایت
+========================= */
 
 renderTracks();
+
 renderBooks();
+
 renderBookArchive();
+
 renderGames();
+
 renderStore();
+
 renderMusicArchive();
+
 renderCart();
+
 renderCalendarYears();
+
 renderCalendar();
+
 updateDigitalClock();
 
-setInterval(updateDigitalClock,1000);
 
-backgroundMusic.muted=backgroundMusicMuted;
+setInterval(
+  updateDigitalClock,
+  1000
+);
+
+
+backgroundMusic.muted =
+  backgroundMusicMuted;
+
+
 updateBackgroundMusicUI();
 
-window.addEventListener("load",()=>{
-  if(backgroundMusicEnabled){
-    startBackgroundMusic();
+
+window.addEventListener(
+  "load",
+  () => {
+
+    if(backgroundMusicEnabled){
+
+      startBackgroundMusic();
+
+    }
+
   }
-});
+);
+
 </script>
 
 </body>
 </html>
+
+
+.field input,
+.field textarea,
+.field select{
+  width:100%;
+  border:1px solid var(--border);
+  background:#fff;
+  color:var(--text);
+  border-radius:13px;
+  padding:11px 13px;
+  outline:none;
+}
+
+.field input:focus,
+.field textarea:focus,
+.field select:focus{
+  border-color:var(--green);
+  box-shadow:0 0 0 4px rgba(21,148,71,.08);
+}
